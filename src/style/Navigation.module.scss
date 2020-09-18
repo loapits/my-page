@@ -1,0 +1,48 @@
+.navigation{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.logo{
+  width: 100px;
+  background-color: aqua;
+}
+.header{
+  display: grid;
+  justify-items: center;
+  margin-top: 17%;
+
+  .logo{
+    justify-items: center;
+    width: 150px;
+  }
+  .name{
+    font-family: Philosopher;
+    font-size: 60px;
+    font-weight: 400;
+    color: #666;
+    margin: 0;
+  }
+}
+.navigation__items{
+  font-family: Yanone;
+  margin-top: 100px;
+
+  ul{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    justify-items: center;
+    align-items: center;
+
+    li{
+      list-style-type: none;
+
+      a{
+        color: #666;
+        font-size: 36px;
+        text-decoration: none;
+      }
+    }
+  }
+}

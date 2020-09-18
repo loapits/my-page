@@ -1,0 +1,40 @@
+.hamburger{
+  cursor: pointer;
+  transition: transform 400ms;
+  user-select: none;
+  width: 80px;
+  height: 80px;
+  margin-left: 50px;
+  
+  .line{
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+  }
+  path{
+    stroke: #fff;
+  }
+
+  &Rotate.active{
+    transform: rotate(45deg);
+    & path{
+      stroke: #666;
+    }
+  }
+  &Rotate180.active{
+    transform: rotate(180deg);
+  }
+  &.active .top{
+    stroke-dashoffset: -68px;
+  }
+  & .top{
+    stroke-dasharray: 40 121;
+  }
+  & .bottom{
+    stroke-dasharray: 40 121;
+  }
+  &.active .bottom{
+    stroke-dashoffset: -68px;
+  }
+}

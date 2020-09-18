@@ -1,0 +1,84 @@
+.options{
+  display: grid;
+  justify-self: flex-end;
+  margin: 30px 100px 30px 0;
+}
+.options_white{
+  path{
+    stroke: #fff;
+  }
+}
+.options_grey{
+  path{
+    stroke: #666;
+  }
+}
+.options__dividers, .options__firstDivider, .options__secondDivider{
+  max-width: 100px;
+  max-height: 100px;
+}
+.options__firstDivider, .options__secondDivider{
+  position: absolute;
+}
+.options__links{
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  justify-items: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
+
+  a, button{
+    width: 30px;
+    height: 30px;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    border: none;
+  }
+  button:focus{
+    outline: none;
+  }
+  .btn_white{
+    background: #fff;
+  }
+  .btn_grey{
+    background: #666;
+  }
+  .share{
+    mask: url('../assets/icons/share.svg') no-repeat center top/cover;
+  }
+  .resume{
+    mask: url('../assets/icons/resume.svg') no-repeat center top/cover;
+  }
+  .gmail{
+    mask: url('../assets/icons/gmail.svg') no-repeat center top/cover;
+  }
+  .github{
+    mask: url('../assets/icons/github.svg') no-repeat center top/cover;
+  }
+  .linkedin{
+    mask: url('../assets/icons/linkedin.svg') no-repeat center top/cover;
+  }
+  .telegram{
+    mask: url('../assets/icons/telegram.svg') no-repeat center top/cover;
+  }
+  
+  .socials{
+    mask: url('../assets/icons/logo.svg') no-repeat center top/cover;
+  }
+  .back{
+    mask: url('../assets/icons/return.svg')no-repeat center top/cover;
+  }
+  img{
+    transform: rotate(-45deg);
+    width: 30px;
+    cursor: pointer;
+  }
+}
+.block{
+  display: block;
+}
+.none{
+  display: none;
+}
