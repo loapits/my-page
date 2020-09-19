@@ -1,6 +1,6 @@
 const initialState = {
-  updatesList: [
-    {id: 0, date: new Date(), type: 'type', updateTitle: 'title', updateMain: 'main'}
+  list: [
+    {id: 0, date: new Date(), type: 'type', title: 'title', main: 'main'}
   ]
 }
 

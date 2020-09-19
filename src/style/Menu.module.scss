@@ -1,0 +1,10 @@
+.mainNavigation{
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}

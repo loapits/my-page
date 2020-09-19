@@ -1,0 +1,27 @@
+.resume{
+  width: 60%;
+  height: 94%;
+  padding: 0 1%;
+  background: rgba($color: #fff, $alpha: 0.8);
+  border: 1px dashed #666;
+
+  .resume__head{
+    text-align: center;
+    font-family: PhilosopherRegular;
+    font-size: 30px;
+    text-align: center;
+    color: #666;
+  }
+  .resume__contactInfo{
+    display: grid;
+    grid-template-columns: 32% 68%;
+  }
+  .resume__avatar{
+    width: 240px;
+    box-shadow: 0 0 10px 5px rgba(#666, .6);
+  }
+  .resume__contacts{
+    padding: 10px;
+    box-shadow: 0 0 10px 5px rgba(#666, .6);
+  }
+}

@@ -1,28 +1,11 @@
 body{
-  background: url('../assets/img/bg/anfmF4GGM9w.jpg') no-repeat fixed top/cover;
+  background: url('../assets/img/bg.jpg') no-repeat fixed top/cover;
 }
-.main{
+.pageContainer{
   display: grid;
-}
-.header{
-  display: grid;
+  position: absolute;
   justify-items: center;
-  margin-top: 5%;
-
-  .logo{
-    justify-items: center;
-    width: 150px;
-  }
-  .name{
-    font-family: Philosopher;
-    font-size: 60px;
-    font-weight: 400;
-    color: #fff;
-    margin: 0;
-  }
-}
-.mainNavigation{
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
   align-items: center;
+  width: 100%;
+  height: 100%;
 }

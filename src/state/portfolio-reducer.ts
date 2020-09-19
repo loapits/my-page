@@ -1,6 +1,6 @@
 const initialState = {
   projects: [
-    {projectTitle: 'Carriage', projectDescription: 'first proj', projectImg: 'url', projectType: 'Pet-project', projectLighthouse: 'one'}
+    {title: 'Carriage', description: 'first proj', img: 'url', type: 'Pet-project', lighthouse: 'one'}
   ]
 }
 

@@ -1,8 +1,8 @@
 import logo from '../assets/icons/logo.png'
 
 const initialState = {
-  logoSrc: logo,
-  headTitle: 'Georgiy Kartashov',
+  logo: logo,
+  title: 'Georgiy Kartashov',
   copyright: 'Ⓒ Georgiy Kartashov, 2020'
 }
 

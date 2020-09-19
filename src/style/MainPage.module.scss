@@ -1,0 +1,17 @@
+.header{
+  display: grid;
+  justify-items: center;
+  margin-top: 17%;
+
+  .logo{
+    justify-items: center;
+    width: 150px;
+  }
+  .name{
+    font-family: PhilosopherRegular;
+    font-size: 60px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+  }
+}

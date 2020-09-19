@@ -1,13 +1,16 @@
+import avatar from '../assets/img/avatar.jpg'
+
 const initialState = {
-  resumeTitle: 'Резюме',
-  resumeContacts: {
+  title: 'Резюме',
+  contacts: {
+    avatar: avatar,
     title: 'Контактная информация',
     fullName: 'Карташов Георгий Игоревич',
     number: '8 (777) 115-93-41',
     email: 'gera59377@gmail.com',
     socials: [
-      {id: 0, img: 'url', link: 'github'},
-      {id: 1, img: 'url', link: 'linkedIn'}
+      {id: 0, link: 'https://github.com/loapits'},
+      {id: 1, link: 'https://www.linkedin.com/in/gkartashov/'}
     ],
     location: 'Казахстан, ВКО, г.Усть-Каменогорск'
   }

@@ -1,11 +1,12 @@
 .copyright{
-  font-family: Yanone;
+  font-family: YanoneLight;
   position: absolute;
   top: 50%;
   right: -50px;
   font-size: 17px;
   font-weight: 100;
   transform: rotate(90deg);
+  z-index: 100;
 }
 .copyright_white{
   color: #fff;

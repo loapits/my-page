@@ -1,12 +1,24 @@
+@keyframes showingNavigation{
+  from{
+    top: -100%;
+  }
+  to{
+    top: 0;
+  }
+}
 .navigation{
   position: absolute;
+  top: 0;
   width: 100%;
   height: 100%;
   background-color: #fff;
+  z-index: 100;
+  animation-name: showingNavigation;
+  animation-duration: 0.3s;
 }
 .logo{
   width: 100px;
-  background-color: aqua;
+  background-color: #666;
 }
 .header{
   display: grid;
@@ -18,7 +30,7 @@
     width: 150px;
   }
   .name{
-    font-family: Philosopher;
+    font-family: PhilosopherRegular;
     font-size: 60px;
     font-weight: 400;
     color: #666;
@@ -26,14 +38,16 @@
   }
 }
 .navigation__items{
-  font-family: Yanone;
+  font-family: YanoneLight;
   margin-top: 100px;
 
   ul{
     display: grid;
-    grid-template-columns: repeat(5, 20%);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     justify-items: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
 
     li{
       list-style-type: none;
