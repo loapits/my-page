@@ -15,7 +15,7 @@ export const Hamburger = React.memo(() => {
   }
 
   return(
-    <div>
+    <>
       <svg
         className={isChanged === false ? hamburger : crossHamburger}
         viewBox="0 0 100 100"
@@ -34,6 +34,6 @@ export const Hamburger = React.memo(() => {
           d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" 
         />
       </svg>
-    </div>
+    </>
   )
 })

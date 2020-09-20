@@ -6,7 +6,6 @@ import { mainReducer } from './main-reducer'
 import { optionsReducer } from './options-reducer'
 import { portfolioReducer } from './portfolio-reducer'
 import { resumeReducer } from './resume-reducer'
-import { updatesReducer } from './updates-reducer'
 import { aboutMeReducer } from './aboutme-reducer'
 import { burgerReducer } from './burger-reducer'
 
@@ -15,11 +14,9 @@ export const reducers = combineReducers({
   options: optionsReducer,
   portfolio: portfolioReducer,
   resume: resumeReducer,
-  updates: updatesReducer,
   aboutMe: aboutMeReducer,
   burger: burgerReducer,
-  navigation: navigationReducer
-  
+  navigation: navigationReducer  
 })
 
 export const store = createStore(reducers, composeWithDevTools(

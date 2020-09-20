@@ -4,7 +4,7 @@ import mainStyles from '../style/App.module.scss'
 import resumeStyles from '../style/Resume.module.scss'
 import { ResumeItem } from './Resume_item'
 
-export const Resume = () => {
+export const Resume = React.memo(() => {
   const resume = useSelector((state: any) => state.resume)
   const headLarge = [resumeStyles.resume__head, resumeStyles.resume__head_large].join(' ')
   const headSmall = [resumeStyles.resume__head, resumeStyles.resume__head_small].join(' ')
@@ -29,7 +29,7 @@ export const Resume = () => {
             <div>Номер: {resume.contacts.number}</div>
             {/*eslint-disable-next-line*/}
             <div className={resumeStyles.resume__email}>Mail: <a href={'mailto:'+resume.contacts.email}>{resume.contacts.email}</a></div>
-            <div className={resumeStyles.resume__images}>            
+            <div className={resumeStyles.resume__images}>
               {/* eslint-disable-next-line */}
               <a href={resume.contacts.socials.github} className={resumeStyles.resume__github}></a>
               {/* eslint-disable-next-line */}
@@ -50,4 +50,4 @@ export const Resume = () => {
       </div>
     </div>
   )
-}
+})

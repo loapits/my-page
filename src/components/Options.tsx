@@ -13,9 +13,9 @@ export const Socials = React.memo(() => {
     dispatch(switchValues(!isShowingSocials))
   }
 
-  const switchBgButton = isChanged === false ? styles.options_white : styles.options_grey
-  const switchBgLink = isChanged === false ? styles.btn_white : styles.btn_grey
-  const switchLogo = isShowingSocials === false ? styles.socials : styles.back
+  const switchBgButton = !isChanged ? styles.options_white : styles.options_grey
+  const switchBgLink = !isChanged ? styles.btn_white : styles.btn_grey
+  const switchLogo = !isShowingSocials ? styles.socials : styles.back
 
   return(
     <div className={styles.options+' '+switchBgButton}>

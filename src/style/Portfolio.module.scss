@@ -1,13 +1,67 @@
 .portfolio{
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 40% 58%;
+  gap: 2%;
   width: 74%;
   height: 94%;
   padding: 1%;
   background: rgba($color: #fff, $alpha: 0.8);
   border: 1px dashed #666;
 
-  img{
+  &__descriptionItem{
+    display: grid;
+    height: 50%;
+    font-size: 20px;
+    font-family: YanoneLight;
+    color: #666;
+    margin-top: 150px;
+    gap: 8px;
+
+    &_weight{
+      font-family: YanoneBold;
+    }
+  }
+  &__descriptionTitle{
+    font-size: 20px;
+    font-family: PhilosopherRegular;
+    font-weight: 100;
+    color: #666;
+  }
+  &__viewItem{
+    display: grid;
+    grid-template-rows: 30% 70%;
+  }
+  &__viewTitle{
+    font-size: 50px;
+    font-family: PhilosopherRegular;
+    font-weight: 100;
+    color: #666;
+  }
+  &__headerView{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    // align-items: center;
+  }
+  &__viewImg{
     width: 100%;
+  }
+  &__img{
+    position: relative;
+  }
+  &__imageView{
+    width: 100%;
+  }
+  &__projectType{
+    width: max-content;
+    height: max-content;
+    background-color: #7fff00;
+    font-family: YanoneBold;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    padding: 3px 10px;
+    border: 1px solid #666;
+    border-radius: 5px;
   }
 }

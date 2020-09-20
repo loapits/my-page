@@ -1,9 +1,7 @@
 import React from 'react'
 import resumeStyles from '../style/Resume.module.scss'
 
-export const ResumeItem = (props: any) => {
-  console.log(props)
-  
+export const ResumeItem = React.memo((props: any) => {
   const headSmall = [resumeStyles.resume__head, resumeStyles.resume__head_small].join(' ')
   
   return (
@@ -14,4 +12,4 @@ export const ResumeItem = (props: any) => {
       )}
     </article>
   )
-}
+})
