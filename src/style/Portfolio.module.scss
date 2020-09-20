@@ -1,0 +1,13 @@
+.portfolio{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 74%;
+  height: 94%;
+  padding: 1%;
+  background: rgba($color: #fff, $alpha: 0.8);
+  border: 1px dashed #666;
+
+  img{
+    width: 100%;
+  }
+}

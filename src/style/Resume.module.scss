@@ -1,27 +1,72 @@
 .resume{
-  width: 60%;
+  width: 65%;
   height: 94%;
-  padding: 0 1%;
+  padding: 1%;
   background: rgba($color: #fff, $alpha: 0.8);
   border: 1px dashed #666;
 
-  .resume__head{
-    text-align: center;
+  &__head{
     font-family: PhilosopherRegular;
-    font-size: 30px;
-    text-align: center;
+    color: #666;
+    margin: 0;
+
+    &_large{
+      text-align: center;
+      font-size: 30px;
+    }
+    &_small{
+      font-size: 25px;
+    }
+  }
+  &__main{
+    display: grid;
+    grid-template-columns: 30% 65%;
+    gap: 0 5%;
+    margin-top: 20px;
+    font-family: YanoneLight;
+    font-size: 21px;
+  }
+  &__secondInfo{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 25% 0;
+    margin-top: 30px;
+    font-family: YanoneLight;
+    font-size: 21px;
     color: #666;
   }
-  .resume__contactInfo{
-    display: grid;
-    grid-template-columns: 32% 68%;
-  }
-  .resume__avatar{
+  &__avatar{
     width: 240px;
     box-shadow: 0 0 10px 5px rgba(#666, .6);
   }
-  .resume__contacts{
-    padding: 10px;
-    box-shadow: 0 0 10px 5px rgba(#666, .6);
+  &__images{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    width: 50%;
+  }
+  &__email{
+    width: max-content;
+    
+    a{
+      text-decoration: none;
+      color: #666;
+    }
+  }
+  &__github, &__linkedin{
+    width: 30px;
+    height: 30px;
+    background-color: #666;
+  }
+  &__github{
+    mask: url('../assets/icons/github.svg') no-repeat center top/cover;
+  }
+  &__linkedin{
+    mask: url('../assets/icons/linkedin.svg') no-repeat center top/cover;
+  }
+  &__contacts, &__item{
+    display: grid;
+    gap: 5%;
+    width: 95%;
   }
 }
