@@ -44,26 +44,7 @@
   }
   .btn_grey{
     background: #666;
-  }
-  .share{
-    mask: url('../assets/icons/share.svg') no-repeat center top/cover;
-  }
-  .resume{
-    mask: url('../assets/icons/resume.svg') no-repeat center top/cover;
-  }
-  .gmail{
-    mask: url('../assets/icons/gmail.svg') no-repeat center top/cover;
-  }
-  .github{
-    mask: url('../assets/icons/github.svg') no-repeat center top/cover;
-  }
-  .linkedin{
-    mask: url('../assets/icons/linkedin.svg') no-repeat center top/cover;
-  }
-  .telegram{
-    mask: url('../assets/icons/telegram.svg') no-repeat center top/cover;
-  }
-  
+  }  
   .socials{
     mask: url('../assets/icons/logo.svg') no-repeat center top/cover;
   }
@@ -75,10 +56,4 @@
     width: 30px;
     cursor: pointer;
   }
-}
-.block{
-  display: block;
-}
-.none{
-  display: none;
 }

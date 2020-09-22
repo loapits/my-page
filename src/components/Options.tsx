@@ -2,8 +2,9 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { switchValues } from '../state/options-reducer'
 import styles from '../style/Options.module.scss'
+import '../style/index.scss'
 
-export const Socials = React.memo(() => {
+export const Options = React.memo(() => {
   const options = useSelector((state: any) => state.options.links)
   const isShowingSocials = useSelector((state: any) => state.options.isShowingSocials)
   const isChanged = useSelector((state: any) => state.burger.isChanged)

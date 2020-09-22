@@ -1,15 +1,14 @@
-import styles from '../style/Options.module.scss'
 const SWITCH_IS_SHOW_SOCIAL = 'SWITCH_IS_SHOW_SOCIAL'
 
 const initialState = {
   isShowingSocials: false,
   links: [
-    {id: 0, class1: styles.share, class2: styles.block, link: 'https://docs.google.com', alt: '', isShow: true},
-    {id: 1, class1: styles.resume, class2: styles.block, link: 'https://docs.google.com/document/d/1J80dcJ7uXD3Oaoz94GtuBxBtyvdImQxNGWO1FyI1q3A/edit?usp=sharing', alt: '', isShow: true},
-    {id: 2, class1: styles.gmail, class2: styles.block, link: 'mailto:gera59377@gmail.com', alt: '', isShow: true},
-    {id: 3, class1: styles.github, class2: styles.none, link: 'https://github.com/loapits', alt: '', isShow: false},
-    {id: 4, class1: styles.linkedin, class2: styles.none, link: 'https://www.linkedin.com/in/gkartashov', alt: '', isShow: false},
-    {id: 5, class1: styles.telegram, class2: styles.none, link: 'https://t.me/loopits', alt: '', isShow: false}
+    {id: 0, class1: 'share', class2: 'block', link: 'https://docs.google.com', alt: '', isShow: true},
+    {id: 1, class1: 'resume', class2: 'block', link: 'https://docs.google.com/document/d/1J80dcJ7uXD3Oaoz94GtuBxBtyvdImQxNGWO1FyI1q3A/edit?usp=sharing', alt: '', isShow: true},
+    {id: 2, class1: 'gmail', class2: 'block', link: 'mailto:gera59377@gmail.com', alt: '', isShow: true},
+    {id: 3, class1: 'github', class2: 'none', link: 'https://github.com/loapits', alt: '', isShow: false},
+    {id: 4, class1: 'linkedin', class2: 'none', link: 'https://www.linkedin.com/in/gkartashov', alt: '', isShow: false},
+    {id: 5, class1: 'telegram', class2: 'none', link: 'https://t.me/loopits', alt: '', isShow: false}
   ]
 }
 
@@ -26,13 +25,13 @@ export const optionsReducer = (state = initialState, action: any): optionsInitia
             return {
               ...el,
               isShow: false,
-              class2: styles.none
+              class2: 'none'
             }
           } else {
             return {
               ...el,
               isShow: true,
-              class2: styles.block
+              class2: 'block'
             }
           }
         })

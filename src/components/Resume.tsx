@@ -1,8 +1,8 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import mainStyles from '../style/App.module.scss'
 import resumeStyles from '../style/Resume.module.scss'
 import { ResumeItem } from './Resume_item'
+import '../style/index.scss'
 
 export const Resume = React.memo(() => {
   const resume = useSelector((state: any) => state.resume)
@@ -10,7 +10,7 @@ export const Resume = React.memo(() => {
   const headSmall = [resumeStyles.resume__head, resumeStyles.resume__head_small].join(' ')
   
   return (
-    <div className={mainStyles.pageContainer}>
+    <div className='pageContainer'>
       <div className={resumeStyles.resume}>
         {/* Description */}
         <div className={resumeStyles.resume__description}>
