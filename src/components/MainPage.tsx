@@ -5,6 +5,8 @@ import styles from '../style/MainPage.module.scss'
 export const MainPage = React.memo(() => {
   const main = useSelector((state: any) => state.main)
 
+  document.title = 'Main'
+
   return (
     <div className={ styles.header }>
       <img src={main.logo} className={styles.logo} alt="Word: Rayark"/>

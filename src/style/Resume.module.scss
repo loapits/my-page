@@ -51,12 +51,25 @@
     a{
       text-decoration: none;
       color: #666;
+
+      &:focus{
+        outline: none;
+      }
+
+      &:hover, &:focus-within{
+        color: #f7a476;
+      }
     }
   }
   &__github, &__linkedin{
     width: 30px;
     height: 30px;
     background-color: #666;
+    transition: background .5s ease;
+
+    &:hover, &:focus{
+      background: #f7a476;
+    }
   }
   &__github{
     mask: url('../assets/icons/github.svg') no-repeat center top/cover;

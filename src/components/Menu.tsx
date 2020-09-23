@@ -8,6 +8,7 @@ import styles from '../style/Menu.module.scss'
 
 export const Menu = React.memo(() => {
   const isChanged = useSelector((state: any) => state.burger.isChanged)
+  
   return (
     <>
     { isChanged && <Navigation /> }

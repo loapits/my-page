@@ -1,12 +1,14 @@
 import carriage from '../assets/img/portfolio/carriage.png'
-import lighthouse from '../assets/img/lighthouse/lighthouse.png'
+import simon from '../assets/img/portfolio/simon_games.png'
+import textshifter from '../assets/img/portfolio/textshifter.png'
+import mars_rovers from '../assets/img/portfolio/mars_rovers.png'
 const SWITCH_IS_DISPLAY = 'SWITCH_IS_DISPLAY'
 
 const initialState = {
   projects: [
     {
       id: 0,
-      title: 'Carriage', 
+      title: 'Carriage',
       description: {
         linkToSite: 'https://faradarata.000webhostapp.com',
         linkToRepository: 'https://github.com/loapits/Carriage',
@@ -20,64 +22,78 @@ const initialState = {
       },
       img: carriage, 
       type: 'Pet-project', 
-      lighthouse: lighthouse,
       isDisplay: true
     },
     {
       id: 1,
-      title: 'Carriage', 
+      title: 'Mars rover racing', 
       description: {
-        linkToSite: 'https://faradarata.000webhostapp.com',
-        linkToRepository: 'https://github.com/loapits/Carriage',
+        linkToSite: 'https://perserverance.fun',
+        linkToRepository: 'https://github.com/ataztech910/perserverance-game-hackaton',
         duration: {
-          from: '11.20',
-          to: '02.20'
+          from: '09.05.20',
+          to: '10.05.20'
         },
-        tasks: 'еера. Адаптив для разных устройств. Реализация PWA',
-        body: 'Сайт создан как пет-проект, для того чтобы получить опыт в разработке. Идея была создать сайт с информацией об исполнителе, а также реализовать на нем плеер, в котором будут все альбомы, написанные автором.', 
-        tools: 'HTML, CSS, JS, jQuery, Ajax, HTML history, GitHub, Sublime Text'
+        tasks: 'Сделал фиксированный показатель очков, думал над алгоритмом рандомной карты.',
+        body: 'Игра для браузера. Сделана в рамках hackathon`а в честь запуска нового марсохода. На этом проетке получил опыт командной разработки, а так же познакомился с таким инструментом как Phaser 3.', 
+        tools: 'NodeJS, Express, Socet.io, Webpack, PhaserJS 3,TypeScript, OOP, Tilde, XML, JSON, VS Code.'
       },
-      img: lighthouse, 
-      type: 'Pet-project', 
-      lighthouse: lighthouse,
+      img: mars_rovers, 
+      type: 'Hakathon', 
       isDisplay: false
     },
     {
       id: 2,
-      title: 'Carriage', 
+      title: 'Smart Trading', 
       description: {
-        linkToSite: 'https://faradarata.000webhostapp.com',
-        linkToRepository: 'https://github.com/loapits/Carriage',
+        linkToSite: 'http://smart-trading.net/',
+        linkToRepository: 'https://github.com/loapits/smart-trading',
         duration: {
-          from: '11.20',
-          to: '02.20'
+          from: '10.03.20',
+          to: '15.04.20'
         },
-        tasks: '-плеера.  устройств. Реализация PWA',
-        body: 'Сайт создан как пет-проект, для того чтобы получить опыт в разработке. Идея была создать сайт с информацией об исполнителе, а также реализовать на нем плеер, в котором будут все альбомы, написанные автором.', 
-        tools: 'HTML, CSS, JS, jQuery, Ajax, HTML history, GitHub, Sublime Text'
+        tasks: 'Верстка, разработка бэкенда. Добавление админ панели для добавления и редактирования контернта. Реализация разархивации на сервере с использованием инструмента Quickstart.',
+        body: 'Проект сделан как новостной сайт.', 
+        tools: 'PHP, XAMPP, MySQL, GitLab, SCSS, VS Code, Quickstart, Trello, Hubstaff.'
       },
-      img: carriage, 
-      type: 'Pet-project', 
-      lighthouse: lighthouse,
+      img: carriage,
+      type: 'Commercial', 
       isDisplay: false
     },
     {
       id: 3,
-      title: 'Carriage', 
+      title: 'Textshifter', 
       description: {
-        linkToSite: 'https://faradarata.000webhostapp.com',
-        linkToRepository: 'https://github.com/loapits/Carriage',
+        linkToSite: 'https://loapits.github.io/Textshifter/',
+        linkToRepository: 'https://github.com/loapits/Textshifter/tree/master',
         duration: {
-          from: '11.20',
-          to: '02.20'
+          from: '01.06.20',
+          to: '06.06.20'
         },
-        tasks: ' Front-End, Ajax запплеера. Адаптив для разных устройств. Реализация PWA',
-        body: 'Сайт создан как пет-проект, для того чтобы получить опыт в разработке. Идея была создать сайт с информацией об исполнителе, а также реализовать на нем плеер, в котором будут все альбомы, написанные автором.', 
-        tools: 'HTML, CSS, JS, jQuery, Ajax, HTML history, GitHub, Sublime Text'
+        tasks: 'Реализация функционала с помощью библиотеки React в связке с Redux и TypeScript. Написание тестов. Деплой на GitHub Pages',
+        body: 'Была идея сделать приложение для форматирования текста. Таких сайтов много, но небыло найдено ни одного, где было бы все собрано в одном месте.', 
+        tools: 'TypeScript, React, Redux, SCSS, Git, GitHub, GitHub Pages, Jest, VS Code, Trello, Google Analytics.'
       },
-      img: carriage, 
+      img: textshifter, 
       type: 'Pet-project', 
-      lighthouse: lighthouse,
+      isDisplay: false
+    },
+    {
+      id: 4,
+      title: 'Simon game', 
+      description: {
+        linkToSite: 'https://loapits.github.io/simon-vue-game/',
+        linkToRepository: 'https://github.com/loapits/simon-vue-game',
+        duration: {
+          from: '23.08.20',
+          to: '27.08.20'
+        },
+        tasks: 'Полное создание игры. Деплой на GitHub Pages.',
+        body: 'Хотелось создать игру на веб технологиях. Реализована с помощью фреймворка VueJS.', 
+        tools: 'VueJS, Git, GitHub, VS Code, GitHub Pages.'
+      },
+      img: simon, 
+      type: 'Pet-project', 
       isDisplay: false
     }
   ]

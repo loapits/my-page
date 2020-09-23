@@ -1,5 +1,5 @@
 import React from 'react'
-import resumeStyles from '../style/Resume.module.scss'
+import resumeStyles from '../../style/Resume.module.scss'
 
 export const ResumeItem = React.memo((props: any) => {
   const headSmall = [resumeStyles.resume__head, resumeStyles.resume__head_small].join(' ')

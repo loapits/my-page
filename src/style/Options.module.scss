@@ -1,6 +1,9 @@
 .options{
   display: grid;
-  justify-self: flex-end;
+  position: absolute;
+  top: 10px;  
+  right: 0;
+  z-index: 100;
   margin: 30px 30px 30px 0;
 }
 .options_white{
@@ -41,9 +44,19 @@
   }
   .btn_white{
     background: #fff;
+    transition: background .5s ease;
+
+    &:hover, &:focus{
+      background: #7bd2f2;
+    }
   }
   .btn_grey{
     background: #666;
+    transition: background .5s ease;
+
+    &:hover, &:focus{
+      background: #7bd2f2;
+    }
   }  
   .socials{
     mask: url('../assets/icons/logo.svg') no-repeat center top/cover;
