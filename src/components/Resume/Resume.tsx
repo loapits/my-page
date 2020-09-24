@@ -10,7 +10,7 @@ export const Resume = React.memo(() => {
   const headLarge = [resumeStyles.resume__head, resumeStyles.resume__head_large].join(' ')
   const headSmall = [resumeStyles.resume__head, resumeStyles.resume__head_small].join(' ')
   
-  document.title = 'CV'
+  document.title = resume.pageTitle
   
   return (
     <div className='pageContainer'>

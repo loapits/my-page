@@ -2,6 +2,7 @@ import avatar from '../assets/img/avatar.jpg'
 
 const initialState = {
   title: 'Резюме',
+  pageTitle: 'Резюме',
   avatar: avatar,
   aboutMe: 'Frontend developer, который хочет развиваться в этом направлении. Интересует Web-development и в целом в программирование.',
   contacts: {

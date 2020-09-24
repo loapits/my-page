@@ -11,7 +11,7 @@ export const Portfolio = React.memo(() => {
   const portfolio = useSelector((state: stateType) => state.portfolio)
   const dispatch = useDispatch()
 
-  document.title = 'Portfolio'
+  document.title = portfolio.pageTitle
   
   const selectPortfolioItem = (id: number) => {
     dispatch(switchDisplayng(id))

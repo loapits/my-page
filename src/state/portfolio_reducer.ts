@@ -6,6 +6,7 @@ import { SWITCH_IS_DISPLAY } from './action_types'
 import { portfolioReducerTypes } from '../types/portfolio_types'
 
 const initialState = {
+  pageTitle: 'Портфолио',
   projects: [
     {
       id: 0,

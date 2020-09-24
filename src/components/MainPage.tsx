@@ -6,7 +6,7 @@ import { stateType } from '../types/state_types'
 export const MainPage = React.memo(() => {
   const main = useSelector((state: stateType) => state.main)
 
-  document.title = 'Main'
+  document.title = main.pageTitle
 
   return (
     <div className={ styles.header }>
