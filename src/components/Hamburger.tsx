@@ -1,10 +1,11 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { switchIsChanged } from '../state/burger-reducer'
+import { switchIsChanged } from '../state/burger_reducer'
 import styles from '../style/Hamburger.module.scss'
+import { stateType } from '../types/state_types'
 
 export const Hamburger = React.memo(() => {
-  const isChanged = useSelector((state: any) => state.burger.isChanged)
+  const isChanged = useSelector((state: stateType) => state.burger.isChanged)
   const dispatch = useDispatch()
   
   const hamburger = styles.hamburger+' '+styles.hamburgerRotate

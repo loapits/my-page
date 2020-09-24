@@ -5,9 +5,10 @@ import { Options } from './Options'
 import { Navigation } from './Navigation'
 import { Copyright } from './Copyright'
 import styles from '../style/Menu.module.scss'
+import { stateType } from '../types/state_types'
 
 export const Menu = React.memo(() => {
-  const isChanged = useSelector((state: any) => state.burger.isChanged)
+  const isChanged = useSelector((state: stateType) => state.burger.isChanged)
   
   return (
     <>

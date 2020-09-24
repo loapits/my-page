@@ -3,9 +3,10 @@ import { useSelector } from 'react-redux'
 import resumeStyles from '../../style/Resume.module.scss'
 import { ResumeItem } from './Resume__item'
 import '../../style/index.scss'
+import { stateType } from '../../types/state_types'
 
 export const Resume = React.memo(() => {
-  const resume = useSelector((state: any) => state.resume)
+  const resume = useSelector((state: stateType) => state.resume)
   const headLarge = [resumeStyles.resume__head, resumeStyles.resume__head_large].join(' ')
   const headSmall = [resumeStyles.resume__head, resumeStyles.resume__head_small].join(' ')
   

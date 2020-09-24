@@ -80,28 +80,35 @@
   }
   &__bodyItem{
     display: grid;
-    grid-template-rows: 55% 35%;
-    gap: 4%;
+    height: 100%;
+    grid-template-rows: 55% 40%;
+    gap: 5%;
+    overflow-y: scroll;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
   &__projectHead{
     position: relative;
     font-family: PhilosopherRegular;
     font-size: 35px;
-    animation: slide 0.5s;
+    animation: slide 0.5s ease;
     margin: 0 0 5px 0;
   }
   &__projectView{
-    position: relative;
-    animation: slide 0.4s;
+    position: absolute;
+    animation: slideImg 0.4s ease;
   }
   &__projectImg{
     position: relative;
+    margin-left: 5%;
     width: 90%;    
+    box-shadow: 0 0 20px #000;
   }
   &__projectType{
     position: absolute;
     top: 20px;
-    left: -20px;
+    left: 0;
     width: max-content;
     background-color: #88e14c;
     color: #fff;
@@ -161,5 +168,14 @@
   }
   to {
     top: 0px;
+  }
+}
+
+@keyframes slideImg {
+  from {
+    top: 120px;
+  }
+  to {
+    top: 60px;
   }
 }

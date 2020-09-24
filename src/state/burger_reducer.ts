@@ -1,12 +1,13 @@
-const SWITCH_IS_CHANGE = 'SWITCH_IS_CHANGE'
+import { burgerReducerTypes } from "../types/burger_types"
+import { SWITCH_IS_CHANGE } from "./action_types"
 
-const initialState = {
+export const initialState = {
   isChanged: false
 }
 
 export type burgerInitialTypes = typeof initialState
 
-export const burgerReducer = (state = initialState, action: any): burgerInitialTypes => {
+export const burgerReducer = (state = initialState, action: burgerReducerTypes): burgerInitialTypes => {
   switch (action.type) {
     case SWITCH_IS_CHANGE: {
       return {
@@ -14,10 +15,11 @@ export const burgerReducer = (state = initialState, action: any): burgerInitialT
         isChanged: action.payload.isChanged
       }
     }
-    default:
+    default: {
       return {
         ...state
       }
+    }
   }
 }
 

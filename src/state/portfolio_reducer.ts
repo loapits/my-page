@@ -2,7 +2,8 @@ import carriage from '../assets/img/portfolio/carriage.png'
 import simon from '../assets/img/portfolio/simon_games.png'
 import textshifter from '../assets/img/portfolio/textshifter.png'
 import mars_rovers from '../assets/img/portfolio/mars_rovers.png'
-const SWITCH_IS_DISPLAY = 'SWITCH_IS_DISPLAY'
+import { SWITCH_IS_DISPLAY } from './action_types'
+import { portfolioReducerTypes } from '../types/portfolio_types'
 
 const initialState = {
   projects: [
@@ -35,8 +36,8 @@ const initialState = {
           to: '10.05.20'
         },
         tasks: 'Сделал фиксированный показатель очков, думал над алгоритмом рандомной карты.',
-        body: 'Игра для браузера. Сделана в рамках hackathon`а в честь запуска нового марсохода. На этом проетке получил опыт командной разработки, а так же познакомился с таким инструментом как Phaser 3.', 
-        tools: 'NodeJS, Express, Socet.io, Webpack, PhaserJS 3,TypeScript, OOP, Tilde, XML, JSON, VS Code.'
+        body: 'Игра для браузера. Сделана в рамках hackathon`а в честь запуска нового марсохода. На этом проетке получил опыт командной разработки, а так же познакомился с таким инструментом как Phaser3.', 
+        tools: 'NodeJS, Express, Socet.io, Webpack, PhaserJS3, TypeScript, OOP, Tilde, XML, JSON, VS Code.'
       },
       img: mars_rovers, 
       type: 'Hakathon', 
@@ -101,12 +102,12 @@ const initialState = {
 
 export type portfolioInitialTypes = typeof initialState
 
-export const portfolioReducer = (state = initialState, action: any): portfolioInitialTypes => {
+export const portfolioReducer = (state = initialState, action: portfolioReducerTypes): portfolioInitialTypes => {
   switch (action.type) {
     case SWITCH_IS_DISPLAY: {
       return {
         ...state,
-        projects: state.projects.map((el: any) => {
+        projects: state.projects.map(el => {
           if (el.id === action.payload.id) {
             return {
               ...el,
@@ -121,14 +122,15 @@ export const portfolioReducer = (state = initialState, action: any): portfolioIn
         })
       }
     }
-    default:
+    default: {
       return {
         ...state
       }
+    }
   }
 }
 
-export const switchDisplayng = (id: any) => ({
+export const switchDisplayng = (id: number) => ({
   type: SWITCH_IS_DISPLAY,
   payload: {
     id: id

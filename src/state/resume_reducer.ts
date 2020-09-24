@@ -44,9 +44,10 @@ export type resumeInitialTypes = typeof initialState
 
 export const resumeReducer = (state = initialState, action: any): resumeInitialTypes => {
   switch (action.type) {
-    default: 
+    default: {
       return {
         ...state
       }
+    }
   }
 }

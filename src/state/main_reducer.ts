@@ -10,9 +10,10 @@ export type mainInitialTypes = typeof initialState
 
 export const mainReducer = (state = initialState, action: any): mainInitialTypes => {
   switch (action.type) {
-    default:
+    default: {
       return {
         ...state
       }
+    }
   }
 }

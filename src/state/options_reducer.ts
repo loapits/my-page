@@ -1,4 +1,5 @@
-const SWITCH_IS_SHOW_SOCIAL = 'SWITCH_IS_SHOW_SOCIAL'
+import { optionsReducerTypes } from "../types/options_types"
+import { SWITCH_IS_SHOW_SOCIAL } from "./action_types"
 
 const initialState = {
   isShowingSocials: false,
@@ -14,7 +15,7 @@ const initialState = {
 
 export type optionsInitialTypes = typeof initialState
 
-export const optionsReducer = (state = initialState, action: any): optionsInitialTypes => {
+export const optionsReducer = (state = initialState, action: optionsReducerTypes): optionsInitialTypes => {
   switch (action.type) {
     case SWITCH_IS_SHOW_SOCIAL: {
       return {
@@ -37,10 +38,11 @@ export const optionsReducer = (state = initialState, action: any): optionsInitia
         })
       }
     }
-    default:
+    default: {
       return {
         ...state
       }
+    }
   }
 }
 
