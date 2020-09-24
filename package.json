@@ -2,6 +2,10 @@
   "name": "myself_proj",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "13.7.0",
+    "npm": "6.14.8"
+  },
   "dependencies": {
     "@types/react-redux": "^7.1.9",
     "@types/redux-thunk": "^2.1.0",
