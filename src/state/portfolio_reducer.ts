@@ -12,8 +12,8 @@ const initialState = {
       id: 0,
       title: 'Carriage',
       description: {
-        linkToSite: 'https://faradarata.000webhostapp.com',
-        linkToRepository: 'https://github.com/loapits/Carriage',
+        linkToSite: 'https://carr1age.herokuapp.com',
+        linkToRepository: 'https://github.com/loapits/carriage',
         duration: {
           from: '11.20',
           to: '02.20'
@@ -48,7 +48,7 @@ const initialState = {
       id: 2,
       title: 'Smart Trading', 
       description: {
-        linkToSite: 'http://smart-trading.net/',
+        linkToSite: 'http://smart-trading.net',
         linkToRepository: 'https://github.com/loapits/smart-trading',
         duration: {
           from: '10.03.20',
@@ -66,8 +66,8 @@ const initialState = {
       id: 3,
       title: 'Textshifter', 
       description: {
-        linkToSite: 'https://loapits.github.io/Textshifter/',
-        linkToRepository: 'https://github.com/loapits/Textshifter/tree/master',
+        linkToSite: 'https://loapits.github.io/textshifter/',
+        linkToRepository: 'https://github.com/loapits/textshifter',
         duration: {
           from: '01.06.20',
           to: '06.06.20'
