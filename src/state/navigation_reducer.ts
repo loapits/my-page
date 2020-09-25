@@ -2,8 +2,7 @@ const initialState = {
   items: [
     {id: 0, title: 'Главная', link: '/'},
     {id: 1, title: 'Резюме', link: '/resume'},
-    {id: 2, title: 'Портфолио', link: '/portfolio'},
-    // {id: 4, title: 'Blog', link: '/blog'}
+    {id: 2, title: 'Портфолио', link: '/portfolio'}
   ]
 }
 

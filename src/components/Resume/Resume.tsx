@@ -2,7 +2,6 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import resumeStyles from '../../style/Resume.module.scss'
 import { ResumeItem } from './Resume__item'
-import '../../style/index.scss'
 import { stateType } from '../../types/state_types'
 
 export const Resume = React.memo(() => {

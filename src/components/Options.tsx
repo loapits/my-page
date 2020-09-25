@@ -2,7 +2,6 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { switchValues } from '../state/options_reducer'
 import styles from '../style/Options.module.scss'
-import '../style/index.scss'
 import { stateType } from '../types/state_types'
 import { optionsLinksType } from '../types/options_types'
 

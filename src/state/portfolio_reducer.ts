@@ -2,6 +2,7 @@ import carriage from '../assets/img/portfolio/carriage.png'
 import simon from '../assets/img/portfolio/simon_games.png'
 import textshifter from '../assets/img/portfolio/textshifter.png'
 import mars_rovers from '../assets/img/portfolio/mars_rovers.png'
+import smart_trading from '../assets/img/portfolio/smart_trading.png'
 import { SWITCH_IS_DISPLAY } from './action_types'
 import { portfolioReducerTypes } from '../types/portfolio_types'
 
@@ -15,7 +16,7 @@ const initialState = {
         linkToSite: 'https://carr1age.herokuapp.com',
         linkToRepository: 'https://github.com/loapits/carriage',
         duration: {
-          from: '11.20',
+          from: '11.19',
           to: '02.20'
         },
         tasks: 'Дизайн сайта, Front-End, Ajax запросы на сервер, написание аудио-плеера. Адаптив для разных устройств. Реализация PWA',
@@ -28,6 +29,24 @@ const initialState = {
     },
     {
       id: 1,
+      title: 'Smart Trading', 
+      description: {
+        linkToSite: 'http://smart-trading.net',
+        linkToRepository: 'https://github.com/loapits/smart-trading',
+        duration: {
+          from: '10.03.20',
+          to: '15.04.20'
+        },
+        tasks: 'Верстка, разработка бэкенда. Добавление админ панели для добавления и редактирования контента. Разархивации на сервере с использованием инструмента Quickstart.',
+        body: 'Проект сделан как новостной сайт.',
+        tools: 'PHP, XAMPP, MySQL, GitLab, SCSS, VS Code, Quickstart, Trello, Hubstaff.'
+      },
+      img: smart_trading,
+      type: 'Commercial', 
+      isDisplay: false
+    },
+    {
+      id: 2,
       title: 'Mars rover racing', 
       description: {
         linkToSite: 'https://perserverance.fun',
@@ -42,24 +61,6 @@ const initialState = {
       },
       img: mars_rovers, 
       type: 'Hakathon', 
-      isDisplay: false
-    },
-    {
-      id: 2,
-      title: 'Smart Trading', 
-      description: {
-        linkToSite: 'http://smart-trading.net',
-        linkToRepository: 'https://github.com/loapits/smart-trading',
-        duration: {
-          from: '10.03.20',
-          to: '15.04.20'
-        },
-        tasks: 'Верстка, разработка бэкенда. Добавление админ панели для добавления и редактирования контернта. Реализация разархивации на сервере с использованием инструмента Quickstart.',
-        body: 'Проект сделан как новостной сайт.', 
-        tools: 'PHP, XAMPP, MySQL, GitLab, SCSS, VS Code, Quickstart, Trello, Hubstaff.'
-      },
-      img: carriage,
-      type: 'Commercial', 
       isDisplay: false
     },
     {
@@ -82,7 +83,7 @@ const initialState = {
     },
     {
       id: 4,
-      title: 'Simon game', 
+      title: 'Simon game',
       description: {
         linkToSite: 'https://loapits.github.io/simon-vue-game/',
         linkToRepository: 'https://github.com/loapits/simon-vue-game',
