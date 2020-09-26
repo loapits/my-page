@@ -5,7 +5,9 @@ import { ResumeItem } from './Resume__item'
 import { stateType } from '../../types/state_types'
 
 export const Resume = React.memo(() => {
-  const resume = useSelector((state: stateType) => state.resume)
+  const resume = useSelector((state: stateType) => state.resume.resume)
+ 
+  
   const headLarge = [resumeStyles.resume__head, resumeStyles.resume__head_large].join(' ')
   const headSmall = [resumeStyles.resume__head, resumeStyles.resume__head_small].join(' ')
   
@@ -18,7 +20,7 @@ export const Resume = React.memo(() => {
         <div className={resumeStyles.resume__description}>
           <h1 className={headLarge}>{resume.title}</h1>
           <div className={resumeStyles.resume__main}>
-            <img className={resumeStyles.resume__avatar} src={resume.avatar} alt="Avatar"/>
+            <img className={resumeStyles.resume__avatar} src={resume.avatar} alt={resume.alt} />
             <p>{resume.aboutMe}</p>
           </div>
         </div>
@@ -35,7 +37,7 @@ export const Resume = React.memo(() => {
               {/* eslint-disable-next-line */}
               <a href={resume.contacts.socials.github} className={resumeStyles.resume__github}></a>
               {/* eslint-disable-next-line */}
-              <a href={resume.contacts.socials.linkedin}className={resumeStyles.resume__linkedin}></a>
+              <a href={resume.contacts.socials.linkedin} className={resumeStyles.resume__linkedin}></a>
             </div>
             <div>{resume.contacts.location}</div>
           </article>

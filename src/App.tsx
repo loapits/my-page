@@ -4,7 +4,7 @@ import { MainPage } from './components/MainPage'
 import { Menu } from './components/Menu'
 import { Resume } from './components/Resume/Resume'
 import { Portfolio } from './components/Portfolio/Portfolio'
-import '../src/style/index.scss'
+import './style/index.scss'
 
 export const App = React.memo(() => {
   return(

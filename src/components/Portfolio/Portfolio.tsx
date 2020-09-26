@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import styles from '../../style/Portfolio.module.scss'
-import { switchDisplayng } from '../../state/portfolio_reducer'
+import { getPortfolio, switchDisplayng } from '../../state/portfolio_reducer'
 import { ProjectItem } from './Portfolio__projectItem'
 import { stateType } from '../../types/state_types'
 import { projectsItemType } from '../../types/portfolio_types'
@@ -12,6 +12,11 @@ export const Portfolio = React.memo(() => {
 
   document.title = portfolio.pageTitle
   
+  useEffect(() => {
+    dispatch(getPortfolio())
+    // eslint-disable-next-line
+  }, [])
+
   const selectPortfolioItem = (id: number) => {
     dispatch(switchDisplayng(id))
   }
@@ -42,21 +47,21 @@ export const Portfolio = React.memo(() => {
               <div className={styles.portfolio__project}>
                 <h1 className={styles.portfolio__projectHead}>{el.title}</h1>
                 <div className={styles.portfolio__projectView}>
-                  <img src={el.img} className={styles.portfolio__projectImg} alt=""/>
+                  <img src={el.img} className={styles.portfolio__projectImg} alt={el.alt}/>
                   <div className={styles.portfolio__projectType}>{el.type}</div>
                 </div>
               </div>
               <div className={styles.portfolio__projectDescription}>
                 <ProjectItem 
-                  itemHeader="Описание:"
+                  itemHeader={el.description.bodyTitle}
                   itemData={el.description.body}
                 />
-                <ProjectItem 
-                  itemHeader="Выполняемые задачи:"
+                <ProjectItem
+                  itemHeader={el.description.tasksTitle}
                   itemData={el.description.tasks}
                 />
-                <ProjectItem 
-                  itemHeader="Инструменты:"
+                <ProjectItem
+                  itemHeader={el.description.toolsTitle}
                   itemData={el.description.tools}
                 />
                 <div className={styles.portfolio__projectDescription_animaiton}>
@@ -78,4 +83,3 @@ export const Portfolio = React.memo(() => {
     </div>  
   )
 })
-

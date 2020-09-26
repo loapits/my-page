@@ -4,7 +4,8 @@ const initialState = {
   logo: logo,
   title: 'Georgiy Kartashov',
   copyright: 'Ⓒ Georgiy Kartashov, 2020',
-  pageTitle: 'Главная'
+  pageTitle: 'Главная',
+  alt: ''
 }
 
 export type mainInitialTypes = typeof initialState

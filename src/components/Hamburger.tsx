@@ -10,7 +10,7 @@ export const Hamburger = React.memo(() => {
   
   const hamburger = styles.hamburger+' '+styles.hamburgerRotate
   const crossHamburger = styles.hamburger+' '+styles.hamburgerRotate+' '+styles.active
-
+  
   const switchDispatch = () => {
     dispatch(switchIsChanged(!isChanged))
   }
