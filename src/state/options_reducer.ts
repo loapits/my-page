@@ -61,6 +61,5 @@ const setOptions = (options: Options) => ({
 
 export const getOptions = () => async (dispatch: Function) => {
   const response = await optionsApi.getOptions()
-  
   dispatch(setOptions(response))
 }

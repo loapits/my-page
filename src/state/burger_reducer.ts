@@ -33,6 +33,5 @@ export const switchIsChanged = (isChanged: boolean) => ({
 
 export const getIsChanged = () => async (dispatch: Function) => {
   const responce = await burgerApi.getBurger()
-  
   dispatch(switchIsChanged(responce.isChanged))
 }

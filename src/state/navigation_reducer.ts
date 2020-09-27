@@ -33,6 +33,5 @@ const setNavigation = (navigation: NavigationItem) => ({
 
 export const getNavigation = () => async (dispatch: Function) => {
   const response = await navigationApi.getNavigationItems()
-  
   dispatch(setNavigation(response))
 }

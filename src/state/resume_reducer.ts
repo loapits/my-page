@@ -33,6 +33,5 @@ const setResume = (resume: ResumeObject) => ({
 
 export const getResume = () => async (dispatch: Function) => {
   const response = await resumeApi.getResume()
-  
   dispatch(setResume(response))
 }

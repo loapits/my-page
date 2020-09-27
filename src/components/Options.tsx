@@ -10,9 +10,7 @@ export const Options = React.memo(() => {
   const isShowingSocials = useSelector((state: State) => state.options.isShowingSocials)
   const isChanged = useSelector((state: State) => state.burger.isChanged)
   const dispatch = useDispatch()
-
-  console.log(options);
-  
+    
   useEffect(() => {
     dispatch(getOptions())
     // eslint-disable-next-line 
