@@ -1,17 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom'
 import { switchIsChanged } from '../state/burger_reducer'
+import { getNavigation } from '../state/navigation_reducer'
 import styles from '../style/Navigation.module.scss'
-import { navigationType } from '../types/navigation_types'
-import { stateType } from '../types/state_types'
+import { NavigationItem } from '../types/navigation'
+import { State } from '../types/state'
 
 export const Navigation = React.memo(() => {
-  const navigation = useSelector((state: stateType) => state.navigation.items)
-  const main = useSelector((state: stateType) => state.main)
-  const isChanged = useSelector((state: stateType) => state.burger.isChanged)
+  const navigation = useSelector((state: State) => state.navigation.items)
+  const main = useSelector((state: State) => state.main)
+  const isChanged = useSelector((state: State) => state.burger.isChanged)
   const dispatch = useDispatch()
 
+  useEffect(() => {
+    dispatch(getNavigation())
+    // eslint-disable-next-line
+  }, [])
+  
   const switchDispatch = () => {
     dispatch(switchIsChanged(!isChanged))
   }
@@ -24,7 +30,7 @@ export const Navigation = React.memo(() => {
       </div>
       <nav className={styles.navigation__items}>
         <ul>
-          {navigation.map((li: navigationType) =>
+          {navigation.map((li: NavigationItem) =>
             <li onClick={switchDispatch} key={li.id}><NavLink to={li.link}>{li.title}</NavLink></li>
           )}
         </ul>

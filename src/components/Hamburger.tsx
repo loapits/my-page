@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { switchIsChanged } from '../state/burger_reducer'
+import { getIsChanged, switchIsChanged } from '../state/burger_reducer'
 import styles from '../style/Hamburger.module.scss'
-import { stateType } from '../types/state_types'
+import { State } from '../types/state'
 
 export const Hamburger = React.memo(() => {
-  const isChanged = useSelector((state: stateType) => state.burger.isChanged)
+  const isChanged = useSelector((state: State) => state.burger.isChanged)
   const dispatch = useDispatch()
   
+  useEffect(() => {
+    dispatch(getIsChanged())
+    // eslint-disable-next-line
+  }, [])
+
   const hamburger = styles.hamburger+' '+styles.hamburgerRotate
   const crossHamburger = styles.hamburger+' '+styles.hamburgerRotate+' '+styles.active
   

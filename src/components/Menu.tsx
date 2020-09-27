@@ -5,19 +5,19 @@ import { Options } from './Options'
 import { Navigation } from './Navigation'
 import { Copyright } from './Copyright'
 import styles from '../style/Menu.module.scss'
-import { stateType } from '../types/state_types'
+import { State } from '../types/state'
 
 export const Menu = React.memo(() => {
-  const isChanged = useSelector((state: stateType) => state.burger.isChanged)
+  const isChanged = useSelector((state: State) => state.burger.isChanged)
   
   return (
     <>
-    { isChanged && <Navigation /> }
-        <Copyright />
-        <div className={styles.mainNavigation}>
-          <Hamburger />
-          <Options />
-        </div>
+      { isChanged && <Navigation /> }
+      <Copyright />
+      <div className={styles.mainNavigation}>
+        <Hamburger />
+        <Options />
+      </div>
     </>
   )
 })

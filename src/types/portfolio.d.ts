@@ -1,25 +1,29 @@
 import { SET_PORTFOLIO_STATE, SWITCH_IS_DISPLAY } from "../state/action_types"
 
-type switchDisplaingTypes = {
+type SwitchDisplaing = {
   type: typeof SWITCH_IS_DISPLAY
   payload: {
     id: number
   }
 }
 
-type setPortfolioState = {
+type SetPortfolio = {
   type: typeof SET_PORTFOLIO_STATE
   payload: {
-    projects: Array<projectsItemType>
+    projects: PorjectsObject
   }
 }
 
-export type projectsItemPropsTypes = {
+export type PortfolioReducer = SwitchDisplaing | SetPortfolio
+
+export type PorjectsObject = Array<ProjectsItem>
+
+export type ProjectsItemProps = {
   itemHeader: string
   itemData: string
 }
 
-export type projectsItemType = {
+export type ProjectsItem = {
   id: number
   title: string
   description: {
@@ -41,5 +45,3 @@ export type projectsItemType = {
   isDisplay: boolean
   alt: string
 }
-
-export type portfolioReducerTypes = switchDisplaingTypes | setPortfolioState

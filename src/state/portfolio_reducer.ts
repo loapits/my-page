@@ -1,25 +1,19 @@
-// import carriage from '../assets/img/portfolio/carriage.png'
-// import simon from '../assets/img/portfolio/simon_games.png'
-// import textshifter from '../assets/img/portfolio/textshifter.png'
-// import mars_rovers from '../assets/img/portfolio/mars_rovers.png'
-// import smart_trading from '../assets/img/portfolio/smart_trading.png'
 import { SET_PORTFOLIO_STATE, SWITCH_IS_DISPLAY } from './action_types'
-import { portfolioReducerTypes, projectsItemType } from '../types/portfolio_types'
+import { PorjectsObject, PortfolioReducer, ProjectsItem } from '../types/portfolio'
 import { porfolioApi } from '../api/api'
 
 const initialState = {
-  pageTitle: 'Портфолио',
-  projects: [] as Array<projectsItemType>
+  projects: [] as PorjectsObject
 }
 
-export type portfolioInitialTypes = typeof initialState
+export type PortfolioInitial = typeof initialState
 
-export const portfolioReducer = (state = initialState, action: portfolioReducerTypes): portfolioInitialTypes => {
+export const portfolioReducer = (state = initialState, action: PortfolioReducer): PortfolioInitial => {
   switch (action.type) {
     case SWITCH_IS_DISPLAY: {
       return {
         ...state,
-        projects: state.projects.map((el: projectsItemType) => {
+        projects: state.projects.map((el: ProjectsItem) => {
           if (el.id === action.payload.id) {
             return {
               ...el,
@@ -64,5 +58,5 @@ const setPortfolio = (projects: Array<object>) => ({
 
 export const getPortfolio = () => async (dispatch: Function) => {
   const response = await porfolioApi.getPortfolio()
-  dispatch(setPortfolio(response.data))
+  dispatch(setPortfolio(response))
 }

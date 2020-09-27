@@ -1,22 +1,20 @@
-import { optionsReducerTypes } from "../types/options_types"
-import { SWITCH_IS_SHOW_SOCIAL } from "./action_types"
+import { optionsApi } from "../api/api"
+import { Options, optionsReducerTypes } from "../types/options"
+import { SWITCH_IS_SHOW_SOCIAL, SET_OPTIONS } from "./action_types"
 
-const initialState = {
-  isShowingSocials: false,
-  links: [
-    {id: 0, class1: 'share', class2: 'block', link: 'https://docs.google.com', alt: '', isShow: true},
-    {id: 1, class1: 'resume', class2: 'block', link: 'https://docs.google.com/document/d/1J80dcJ7uXD3Oaoz94GtuBxBtyvdImQxNGWO1FyI1q3A/edit?usp=sharing', alt: '', isShow: true},
-    {id: 2, class1: 'gmail', class2: 'block', link: 'mailto:gera59377@gmail.com', alt: '', isShow: true},
-    {id: 3, class1: 'github', class2: 'none', link: 'https://github.com/loapits', alt: '', isShow: false},
-    {id: 4, class1: 'linkedin', class2: 'none', link: 'https://www.linkedin.com/in/gkartashov', alt: '', isShow: false},
-    {id: 5, class1: 'telegram', class2: 'none', link: 'https://t.me/loopits', alt: '', isShow: false}
-  ]
-}
+const initialState = {} as Options
 
-export type optionsInitialTypes = typeof initialState
+export type OptionsInitial = typeof initialState
 
-export const optionsReducer = (state = initialState, action: optionsReducerTypes): optionsInitialTypes => {
+export const optionsReducer = (state = initialState, action: optionsReducerTypes): OptionsInitial => {
   switch (action.type) {
+    case SET_OPTIONS: {
+      return {
+        ...state,
+        isShowingSocials: action.payload.isShowingSocials,
+        links: action.payload.links
+      }
+    }
     case SWITCH_IS_SHOW_SOCIAL: {
       return {
         ...state,
@@ -52,3 +50,17 @@ export const switchValues = (isShowingSocials: boolean) => ({
     isShowingSocials
   }
 })
+
+const setOptions = (options: Options) => ({
+  type: SET_OPTIONS,
+  payload: {
+    isShowingSocials: options.isShowingSocials,
+    links: options.links
+  }
+})
+
+export const getOptions = () => async (dispatch: Function) => {
+  const response = await optionsApi.getOptions()
+  
+  dispatch(setOptions(response))
+}

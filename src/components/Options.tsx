@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { switchValues } from '../state/options_reducer'
+import { getOptions, switchValues } from '../state/options_reducer'
 import styles from '../style/Options.module.scss'
-import { stateType } from '../types/state_types'
-import { optionsLinksType } from '../types/options_types'
+import { State } from '../types/state'
+import { OptionsLinks } from '../types/options'
 
 export const Options = React.memo(() => {
-  const options = useSelector((state: stateType) => state.options.links)
-  const isShowingSocials = useSelector((state: stateType) => state.options.isShowingSocials)
-  const isChanged = useSelector((state: stateType) => state.burger.isChanged)
+  const options = useSelector((state: State) => state.options.links)
+  const isShowingSocials = useSelector((state: State) => state.options.isShowingSocials)
+  const isChanged = useSelector((state: State) => state.burger.isChanged)
   const dispatch = useDispatch()
 
+  console.log(options);
+  
+  useEffect(() => {
+    dispatch(getOptions())
+    // eslint-disable-next-line 
+  }, [])
+  
   const switchIsShowingSocials = () => {
     dispatch(switchValues(!isShowingSocials))
   }
@@ -33,7 +40,7 @@ export const Options = React.memo(() => {
       </div>
       <div className={styles.options__links}>
         <button onClick={switchIsShowingSocials} className={[switchLogo, switchBgLink].join(' ')}></button>
-        {options.map((el: optionsLinksType) => 
+        {options && options.map((el: OptionsLinks) => 
           // eslint-disable-next-line
           <a key={el.id} href={el.link} className={[el.class1, el.class2, switchBgLink].join(' ')}></a>
         )}
