@@ -5,14 +5,17 @@ import { getPortfolio, switchDisplayng } from '../../state/portfolio_reducer'
 import { ProjectItem } from './Portfolio__projectItem'
 import { State } from '../../types/state'
 import { ProjectsItem } from '../../types/portfolio'
+import { getMain } from '../../state/main_reducer'
+import { Preloader } from '../Preloader'
 
 export const Portfolio = React.memo(() => {
   const portfolio = useSelector((state: State) => state.portfolio)
   const dispatch = useDispatch()
-
   
   useEffect(() => {
     dispatch(getPortfolio())
+    dispatch(getMain())
+
     // eslint-disable-next-line
   }, [])
   
@@ -42,6 +45,7 @@ export const Portfolio = React.memo(() => {
           )}
         </div>
         <div className={styles.portfolio__body}>
+          {portfolio.projects === null  && <Preloader />}
           {portfolio.projects.map((el: ProjectsItem) => 
             el.isDisplay && 
             <div className={styles.portfolio__bodyItem} key={el.id} >

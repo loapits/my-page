@@ -3,7 +3,7 @@ import { Burger, BurgerReducer } from "../types/burger"
 import { SWITCH_IS_CHANGE } from "./action_types"
 
 export const initialState = {
-  // isChanged: false 
+  isChanged: false 
 } as Burger
 
 export type BurgerInitial = typeof initialState

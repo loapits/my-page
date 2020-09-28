@@ -24,6 +24,9 @@ export const Options = React.memo(() => {
   const switchBgLink = !isChanged ? styles.btn_white : styles.btn_grey
   const switchLogo = !isShowingSocials ? styles.socials : styles.back
 
+  if (!options) {
+    return (<div></div>)
+  }
   return(
     <div className={styles.options+' '+switchBgButton}>
       <div className={styles.options__dividers}>

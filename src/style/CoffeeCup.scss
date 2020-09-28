@@ -1,0 +1,80 @@
+.cupBlock{
+  position: absolute;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: aliceblue;
+  z-index: 200;
+}
+.whiteCup{
+  .tea{
+    path{
+      stroke: #fff;
+    }
+    #teabag{
+      stroke: azure;
+    }
+  }
+}
+.darkCup{
+  .tea{
+    path{
+      stroke: #33406F;
+    }
+    #teabag{
+      stroke: #33406F;
+    }
+  }
+}
+.tea{
+  #teabag{
+    transform-origin: top center;
+    transform: rotate(3deg);
+    animation: swing 2s infinite;
+  }
+  #steamL{
+    stroke-dasharray: 13;
+    stroke-dashoffset: 13;
+    animation: steamLarge 2s infinite;
+    stroke: tomato;
+  }
+  #steamR{
+    stroke-dasharray: 9;
+    stroke-dashoffset: 9;
+    animation: steamSmall 2s infinite;
+    stroke: tomato;
+  }
+}
+@keyframes swing{
+  50%{
+    transform: rotate(-3deg);
+  }
+}
+@keyframes steamLarge{
+  0%{
+    stroke-dashoffset: 13;
+    opacity: .6;
+  }
+  100%{
+    stroke-dashoffset: 39;
+    opacity: 0;
+  }
+}
+@keyframes steamSmall{
+  10%{
+    stroke-dashoffset: 9;
+    opacity: .6;
+  }  
+  80%{
+    stroke-dashoffset: 27;
+    opacity: 0;
+  }
+  100%{
+    stroke-dashoffset: 27;
+    opacity: 0;
+  }
+}

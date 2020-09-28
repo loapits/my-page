@@ -12,10 +12,10 @@ export const Navigation = React.memo(() => {
   const main = useSelector((state: State) => state.main)
   const isChanged = useSelector((state: State) => state.burger.isChanged)
   const dispatch = useDispatch()
-
+ 
   useEffect(() => {
     dispatch(getNavigation())
-    // eslint-disable-next-line
+    //eslint-disable-next-line
   }, [])
   
   const switchDispatch = () => {

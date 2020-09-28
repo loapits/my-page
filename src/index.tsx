@@ -5,7 +5,6 @@ import { Provider } from 'react-redux'
 import * as serviceWorker from './serviceWorker'
 import { App } from './App'
 import { store } from './state/store'
-
 import './assets/fonts/fordescription/Philosopher.css'
 import './assets/fonts/YanoneKaffeesatz/YanoneKaffeesatz.css'
 import 'normalize.css'

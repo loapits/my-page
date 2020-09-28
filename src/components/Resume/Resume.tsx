@@ -4,6 +4,8 @@ import resumeStyles from '../../style/Resume.module.scss'
 import { ResumeItem } from './Resume__item'
 import { State } from '../../types/state'
 import { getResume } from '../../state/resume_reducer'
+import { getMain } from '../../state/main_reducer'
+import { Preloader } from '../Preloader'
 
 export const Resume = React.memo(() => {
   const resume = useSelector((state: State) => state.resume.resume)
@@ -11,6 +13,7 @@ export const Resume = React.memo(() => {
     
   useEffect(() => {
     dispatch(getResume())
+    dispatch(getMain())
     // eslint-disable-next-line
   }, [])
   
@@ -25,6 +28,7 @@ export const Resume = React.memo(() => {
           <h1 className={headLarge}>{resume.title}</h1>
           <div className={resumeStyles.resume__main}>
             <img className={resumeStyles.resume__avatar} src={resume.avatar} alt={resume.alt} />
+            {!resume.contacts && <Preloader />}
             <p>{resume.aboutMe}</p>
           </div>
         </div>
