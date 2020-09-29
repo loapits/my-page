@@ -27,7 +27,11 @@ export const Resume = React.memo(() => {
         <section className={resumeStyles.resume__description}>
           <h1 className={headLarge}>{resume.title}</h1>
           <article className={resumeStyles.resume__main}>
-            <img className={resumeStyles.resume__avatar} src={resume.avatar} alt={resume.alt} />
+            <img 
+              className={resumeStyles.resume__avatar} 
+              src={resume.avatar} 
+              alt={resume.alt} 
+            />
             {!resume.contacts && <Preloader />}
             <p>{resume.aboutMe}</p>
           </article>
@@ -36,15 +40,29 @@ export const Resume = React.memo(() => {
           <section className={resumeStyles.resume__secondInfo}>
             <article className={resumeStyles.resume__contacts}>
               <h2 className={headSmall}>{resume.contacts.title}</h2>
-              <span>Ф.И.О: {resume.contacts.fullName}</span>
-              <span>Номер: {resume.contacts.number}</span>
+              <span><span>Ф.И.О: </span>{resume.contacts.fullName}</span>
+              <span><span>Номер: </span>{resume.contacts.number}</span>
               {/*eslint-disable-next-line*/}
-              <span className={resumeStyles.resume__email}>Mail: <a href={'mailto:'+resume.contacts.email}>{resume.contacts.email}</a></span>
+              <span
+                className={resumeStyles.resume__email}>
+                  <span>Mail: </span>
+                  <a href={'mailto:'+resume.contacts.email}>
+                    {resume.contacts.email}
+                  </a>
+              </span>
               <span className={resumeStyles.resume__images}>
                 {/* eslint-disable-next-line */}
-                <a href={resume.contacts.socials.github} className={resumeStyles.resume__github}></a>
+                <a 
+                  href={resume.contacts.socials.github}
+                  aria-label="Ссылка на гитхаб" 
+                  className={resumeStyles.resume__github}
+                ></a>
                 {/* eslint-disable-next-line */}
-                <a href={resume.contacts.socials.linkedin} className={resumeStyles.resume__linkedin}></a>
+                <a
+                  href={resume.contacts.socials.linkedin} 
+                  aria-label="Ссылка на linkedin" 
+                  className={resumeStyles.resume__linkedin}
+                ></a>
               </span>
               <span>{resume.contacts.location}</span>
             </article>

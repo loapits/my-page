@@ -13,7 +13,7 @@ export const MainPage = React.memo(() => {
     dispatch(getMain())
     // eslint-disable-next-line
   }, [])
-    
+  
   document.title = 'Главная'
 
   return (

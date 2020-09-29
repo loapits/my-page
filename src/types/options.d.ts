@@ -22,6 +22,7 @@ export type OptionsLinks = {
   link: string
   alt: string
   isShow: boolean
+  ariaLabel: string
 }
 
 export type Options = {

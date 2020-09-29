@@ -1,10 +1,6 @@
 import React, { Suspense } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import { CoffeeCup } from './components/CoffeeCup'
-// import { MainPage } from './components/MainPage'
-// import { Menu } from './components/Menu'
-// import { Resume } from './components/Resume/Resume'
-// import { Portfolio } from './components/Portfolio/Portfolio'
 import './style/index.scss'
 
 const Menu = React.lazy(() => import('./components/Menu').then(({Menu}) => ({default: Menu})))

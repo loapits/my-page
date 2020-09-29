@@ -40,10 +40,23 @@ export const Options = React.memo(() => {
 				</svg>
       </div>
       <div className={styles.options__links}>
-        <button type="button" onClick={switchIsShowingSocials} className={[switchLogo, switchBgLink].join(' ')}></button>
+        <button 
+          type="button"
+          onClick={switchIsShowingSocials}
+          className={[switchLogo, switchBgLink].join(' ')}
+          aria-label={!isShowingSocials
+            ? "Показать социальные сети"
+            : "Назад к опциям"
+          }
+        ></button>
         {options && options.map((el: OptionsLinks) => 
           // eslint-disable-next-line
-          <a key={el.id} href={el.link} className={[el.class1, el.class2, switchBgLink].join(' ')}></a>
+          <a 
+            key={el.id} 
+            href={el.link} 
+            className={[el.class1, el.class2, switchBgLink].join(' ')}
+            aria-label={el.ariaLabel}
+          ></a>
         )}
       </div> 
     </div>

@@ -30,7 +30,12 @@ export const Portfolio = React.memo(() => {
         {portfolio.projects.length === 0 && <Preloader />}
         <aside className={styles.portfolio__list}>
           {portfolio.projects.map((el: ProjectsItem) => 
-            <section key={el.id} onClick={() => selectPortfolioItem(el.id)} className={styles.portfolio__listItem}>
+            <section
+              key={el.id} 
+              onClick={() => selectPortfolioItem(el.id)} 
+              className={styles.portfolio__listItem}
+              aria-label={el.title}
+            >
               <article className={styles.portfolio__listData}>
                 <aside className={[styles.portfolio__listDate, el.isDisplay && styles.activeItem].join(' ')}>
                   <span>{el.description.duration.from}</span>
@@ -51,7 +56,11 @@ export const Portfolio = React.memo(() => {
               <section className={styles.portfolio__project}>
                 <h1 className={styles.portfolio__projectHead}>{el.title}</h1>
                 <div className={styles.portfolio__projectView}>
-                  <img src={el.img} className={styles.portfolio__projectImg} alt={el.alt}/>
+                  <img 
+                    src={el.img} 
+                    className={styles.portfolio__projectImg} 
+                    alt={el.alt}
+                  />
                   <span className={styles.portfolio__projectType}>{el.type}</span>
                 </div>
               </section>
@@ -74,10 +83,22 @@ export const Portfolio = React.memo(() => {
                   <span> до {el.description.duration.to}</span>
                 </article>
                 <article className={styles.portfolio__projectDescriptionLinks}>
-                  {/* eslint-disable-next-line */}
-                  {el.description.linkToRepository && <a href={el.description.linkToSite} className={[styles.link, 'site'].join(' ')}></a>}
-                  {/* eslint-disable-next-line */}
-                  {el.description.linkToRepository && <a href={el.description.linkToRepository} className={[styles.link, 'github'].join(' ')}></a>}
+                  {el.description.linkToRepository && 
+                    /* eslint-disable-next-line */
+                    <a 
+                      href={el.description.linkToSite} 
+                      aria-label="Ссылка на гитхаб" 
+                      className={[styles.link, 'site'].join(' ')}
+                    ></a>
+                  }
+                  {el.description.linkToRepository && 
+                    /* eslint-disable-next-line */
+                    <a 
+                      href={el.description.linkToRepository} 
+                      aria-label="Ссылка на linkedin" 
+                      className={[styles.link, 'github'].join(' ')}
+                    ></a>
+                  }
                 </article>
               </section>
             </article>

@@ -31,7 +31,18 @@ export const Navigation = React.memo(() => {
       <nav className={styles.navigation__items}>
         <ul>
           {navigation.map((li: NavigationItem) =>
-            <li onClick={switchDispatch} key={li.id}><NavLink tabIndex={li.id+1} to={li.link}>{li.title}</NavLink></li>
+            <li 
+              onClick={switchDispatch} 
+              key={li.id}
+            >
+              <NavLink 
+                tabIndex={li.id+1} 
+                aria-label={li.title} 
+                to={li.link}
+              >
+                {li.title}
+              </NavLink>
+            </li>
           )}
         </ul>
       </nav>
