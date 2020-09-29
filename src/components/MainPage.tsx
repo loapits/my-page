@@ -17,10 +17,10 @@ export const MainPage = React.memo(() => {
   document.title = 'Главная'
 
   return (
-    <div className={ styles.header }>
+    <main className={ styles.header }>
       {!main.logo && !main.title && <Preloader />}
       <img src={main.logo} className={styles.logo} alt={main.alt}/>
       <h1 className={styles.name}>{main.title}</h1>
-    </div>
+    </main>
   )
 })

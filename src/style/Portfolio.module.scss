@@ -57,9 +57,11 @@
     gap: 5%;
   }
   &__listDate{
+    display: grid;
     border-right: 4px solid #ccc;
     font-family: YanoneLight;
     font-size: 16px;
+    align-content: space-around;
   }
   &__listDescription{
     display: grid;
@@ -134,8 +136,9 @@
     }
 
     &_bold{
-      font-family: YanoneBold;
+      font-family: YanoneLight;
       margin-right: 10px;
+      font-weight: 800;
     }
     &_animaiton{
       position: relative;

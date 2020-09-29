@@ -10,8 +10,8 @@ export const Copyright = React.memo(() => {
   const switchColor = isChanged === false ? styles.copyright_white : styles.copyright_gray
 
   return(
-    <div className={[styles.copyright, switchColor].join(' ')}>
+    <span className={[styles.copyright, switchColor].join(' ')}>
       {copyright}
-    </div>
+    </span>
   )
 })

@@ -31,6 +31,9 @@
   }
 }
 .tea{
+  path{
+    stroke: red;
+  }
   #teabag{
     transform-origin: top center;
     transform: rotate(3deg);

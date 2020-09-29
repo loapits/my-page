@@ -8,9 +8,9 @@ export const ResumeItem = React.memo((props: ResumeItemProps) => {
   
   return (
     <article key={props.item.id} className={resumeStyles.resume__item}>
-      <h1 className={headSmall}>{props.item.title}</h1>
+      <h2 className={headSmall}>{props.item.title}</h2>
       {props.item.list.map((el: ResumeComponentItem) =>      
-        <div key={el.body}>{el.body}</div>
+        <span key={el.body}>{el.body}</span>
       )}
     </article>
   )
