@@ -50,3 +50,341 @@
     opacity: 0;
   } 
 }
+
+@media only screen and (min-width: 1750px) and (max-width: 1919px){
+  .menuToggle{
+    gap: 8px;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+    
+    .span1, .span2, .span3{
+      width: 30px;
+      height: 3px;
+    }
+  
+    &.active .span1{
+      background: #666;
+      transform: rotate(45deg) translate(5px);
+    }
+    &.active .span2{
+      background: #666;
+      transform: rotate(495deg) translate(2px);   
+    }
+  }
+}
+@media only screen and (min-width: 1600px) and (max-width: 1749px){
+  .menuToggle{
+    gap: 8px;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+    
+    .span1, .span2, .span3{
+      width: 30px;
+      height: 3px;
+    }
+  
+    &.active .span1{
+      background: #666;
+      transform: rotate(45deg) translate(5px);
+    }
+    &.active .span2{
+      background: #666;
+      transform: rotate(495deg) translate(2px);   
+    }
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1599px){
+  .menuToggle{
+    gap: 8px;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+    
+    .span1, .span2, .span3{
+      width: 30px;
+      height: 3px;
+    }
+  
+    &.active .span1{
+      background: #666;
+      transform: rotate(45deg) translate(5px);
+    }
+    &.active .span2{
+      background: #666;
+      transform: rotate(495deg) translate(2px);   
+    }
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1365px){
+  .menuToggle{
+    gap: 8px;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+    
+    .span1, .span2, .span3{
+      width: 30px;
+      height: 3px;
+    }
+  
+    &.active .span1{
+      background: #666;
+      transform: rotate(45deg) translate(5px);
+    }
+    &.active .span2{
+      background: #666;
+      transform: rotate(495deg) translate(2px);   
+    }
+  }
+}
+@media only screen and (min-width: 1152px) and (max-width: 1279px){
+  .menuToggle{
+    gap: 8px;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+    
+    .span1, .span2, .span3{
+      width: 30px;
+      height: 3px;
+    }
+  
+    &.active .span1{
+      background: #666;
+      transform: rotate(45deg) translate(5px);
+    }
+    &.active .span2{
+      background: #666;
+      transform: rotate(495deg) translate(2px);   
+    }
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1151px){
+  .menuToggle{
+    gap: 8px;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+    
+    .span1, .span2, .span3{
+      width: 30px;
+      height: 3px;
+    }
+  
+    &.active .span1{
+      background: #666;
+      transform: rotate(45deg) translate(5px);
+    }
+    &.active .span2{
+      background: #666;
+      transform: rotate(495deg) translate(2px);   
+    }
+  }
+}
+/* Adaptive mobile */
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  .menuToggle{
+    gap: 8px;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+    
+    .span1, .span2, .span3{
+      width: 30px;
+      height: 3px;
+    }
+  
+    &.active .span1{
+      background: #666;
+      transform: rotate(45deg) translate(5px);
+    }
+    &.active .span2{
+      background: #666;
+      transform: rotate(495deg) translate(2px);   
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .menuToggle{
+    gap: 8px;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+    
+    .span1, .span2, .span3{
+      width: 30px;
+      height: 3px;
+    }
+  
+    &.active .span1{
+      background: #666;
+      transform: rotate(45deg) translate(5px);
+    }
+    &.active .span2{
+      background: #666;
+      transform: rotate(495deg) translate(2px);   
+    }
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 767px) {
+  .menuToggle{
+    gap: 8px;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+    
+    .span1, .span2, .span3{
+      width: 30px;
+      height: 3px;
+    }
+  
+    &.active .span1{
+      background: #666;
+      transform: rotate(45deg) translate(5px);
+    }
+    &.active .span2{
+      background: #666;
+      transform: rotate(495deg) translate(2px);   
+    }
+  }
+}
+@media only screen and (min-width: 580px) and (max-width: 719px) {
+  .menuToggle{
+    gap: 8px;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+    
+    .span1, .span2, .span3{
+      width: 30px;
+      height: 3px;
+      background: #666;
+    }
+  
+    &.active .span1{
+      background: #666;
+      transform: rotate(45deg) translate(5px);
+    }
+    &.active .span2{
+      background: #666;
+      transform: rotate(495deg) translate(2px);   
+    }
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 579px) {
+  .menuToggle{
+    gap: 8px;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+    
+    .span1, .span2, .span3{
+      width: 30px;
+      height: 3px;
+      background: #666;
+    }
+  
+    &.active .span1{
+      background: #666;
+      transform: rotate(45deg) translate(5px);
+    }
+    &.active .span2{
+      background: #666;
+      transform: rotate(495deg) translate(2px);   
+    }
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 479px) {
+  .menuToggle{
+    gap: 8px;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+    
+    .span1, .span2, .span3{
+      width: 30px;
+      height: 3px;
+      background: #666;
+    }
+  
+    &.active .span1{
+      background: #666;
+      transform: rotate(45deg) translate(5px);
+    }
+    &.active .span2{
+      background: #666;
+      transform: rotate(495deg) translate(2px);   
+    }
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 374px) {
+  .menuToggle{
+    gap: 8px;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+    
+    .span1, .span2, .span3{
+      width: 30px;
+      height: 3px;
+      background: #666;
+    }
+  
+    &.active .span1{
+      background: #666;
+      transform: rotate(45deg) translate(5px);
+    }
+    &.active .span2{
+      background: #666;
+      transform: rotate(495deg) translate(2px);   
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .menuToggle{
+    gap: 8px;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+    
+    .span1, .span2, .span3{
+      width: 30px;
+      height: 3px;
+      background: #666;
+    }
+  
+    &.active .span1{
+      background: #666;
+      transform: rotate(45deg) translate(5px);
+    }
+    &.active .span2{
+      background: #666;
+      transform: rotate(495deg) translate(2px);   
+    }
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 319px) {
+  .menuToggle{
+    gap: 8px;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+    
+    .span1, .span2, .span3{
+      width: 30px;
+      height: 3px;
+      background: #666;
+    }
+  
+    &.active .span1{
+      background: #666;
+      transform: rotate(45deg) translate(5px);
+    }
+    &.active .span2{
+      background: #666;
+      transform: rotate(495deg) translate(2px);   
+    }
+  }
+}

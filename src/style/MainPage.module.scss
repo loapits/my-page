@@ -18,3 +18,336 @@
     margin: 0;
   }
 }
+
+@media only screen and (min-width: 1750px) and (max-width: 1919px){
+  .header{
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+  
+    .logo{
+      align-self: flex-end;
+      width: 150px;
+    }
+    .name{
+      align-self: flex-start;
+      font-family: PhilosopherRegular;
+      font-size: 60px;
+      font-weight: 400;
+      color: #fff;
+      margin: 0;
+    }
+  }
+}
+@media only screen and (min-width: 1600px) and (max-width: 1749px){
+  .header{
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+  
+    .logo{
+      align-self: flex-end;
+      width: 150px;
+    }
+    .name{
+      align-self: flex-start;
+      font-family: PhilosopherRegular;
+      font-size: 60px;
+      font-weight: 400;
+      color: #fff;
+      margin: 0;
+    }
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1599px){
+  .header{
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+  
+    .logo{
+      align-self: flex-end;
+      width: 150px;
+    }
+    .name{
+      align-self: flex-start;
+      font-family: PhilosopherRegular;
+      font-size: 60px;
+      font-weight: 400;
+      color: #fff;
+      margin: 0;
+    }
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1365px){
+  .header{
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+  
+    .logo{
+      align-self: flex-end;
+      width: 150px;
+    }
+    .name{
+      align-self: flex-start;
+      font-family: PhilosopherRegular;
+      font-size: 60px;
+      font-weight: 400;
+      color: #fff;
+      margin: 0;
+    }
+  }
+}
+@media only screen and (min-width: 1152px) and (max-width: 1279px){
+  .header{
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+  
+    .logo{
+      align-self: flex-end;
+      width: 150px;
+    }
+    .name{
+      align-self: flex-start;
+      font-family: PhilosopherRegular;
+      font-size: 60px;
+      font-weight: 400;
+      color: #fff;
+      margin: 0;
+    }
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1151px){
+  .header{
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+  
+    .logo{
+      align-self: flex-end;
+      width: 150px;
+    }
+    .name{
+      align-self: flex-start;
+      font-family: PhilosopherRegular;
+      font-size: 60px;
+      font-weight: 400;
+      color: #fff;
+      margin: 0;
+    }
+  }
+}
+
+/* Adaptive mobile */
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  .header{
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+  
+    .logo{
+      align-self: flex-end;
+      width: 150px;
+    }
+    .name{
+      align-self: flex-start;
+      font-family: PhilosopherRegular;
+      font-size: 60px;
+      font-weight: 400;
+      color: #fff;
+      margin: 0;
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header{
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+  
+    .logo{
+      align-self: flex-end;
+      width: 150px;
+    }
+    .name{
+      align-self: flex-start;
+      font-family: PhilosopherRegular;
+      font-size: 60px;
+      font-weight: 400;
+      color: #fff;
+      margin: 0;
+    }
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 767px) {
+  .header{
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+  
+    .logo{
+      align-self: flex-end;
+      width: 150px;
+    }
+    .name{
+      align-self: flex-start;
+      font-family: PhilosopherRegular;
+      font-size: 60px;
+      font-weight: 400;
+      color: #fff;
+      margin: 0;
+    }
+  }
+}
+@media only screen and (min-width: 580px) and (max-width: 719px) {
+  .header{
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+  
+    .logo{
+      align-self: flex-end;
+      width: 150px;
+    }
+    .name{
+      align-self: flex-start;
+      font-family: PhilosopherRegular;
+      font-size: 60px;
+      font-weight: 400;
+      color: #fff;
+      margin: 0;
+    }
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 579px) {
+  .header{
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+  
+    .logo{
+      align-self: flex-end;
+      width: 150px;
+    }
+    .name{
+      align-self: flex-start;
+      font-family: PhilosopherRegular;
+      font-size: 60px;
+      font-weight: 400;
+      color: #fff;
+      margin: 0;
+    }
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 479px) {
+  .header{
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+  
+    .logo{
+      align-self: flex-end;
+      width: 150px;
+    }
+    .name{
+      align-self: flex-start;
+      font-family: PhilosopherRegular;
+      font-size: 60px;
+      font-weight: 400;
+      color: #fff;
+      margin: 0;
+    }
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 374px) {
+  .header{
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+  
+    .logo{
+      align-self: flex-end;
+      width: 150px;
+    }
+    .name{
+      align-self: flex-start;
+      font-family: PhilosopherRegular;
+      font-size: 60px;
+      font-weight: 400;
+      color: #fff;
+      margin: 0;
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .header{
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+  
+    .logo{
+      align-self: flex-end;
+      width: 150px;
+    }
+    .name{
+      align-self: flex-start;
+      font-family: PhilosopherRegular;
+      font-size: 60px;
+      font-weight: 400;
+      color: #fff;
+      margin: 0;
+    }
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 319px) {
+  .header{
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+  
+    .logo{
+      align-self: flex-end;
+      width: 150px;
+    }
+    .name{
+      align-self: flex-start;
+      font-family: PhilosopherRegular;
+      font-size: 60px;
+      font-weight: 400;
+      color: #fff;
+      margin: 0;
+    }
+  }
+}

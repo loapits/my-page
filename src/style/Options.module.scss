@@ -59,14 +59,712 @@
     }
   }  
   .socials{
-    mask: url('../assets/icons/logo.svg') no-repeat center top/cover;
+    mask: url('../assets/icons/logo.svg') center/cover;
   }
   .back{
-    mask: url('../assets/icons/return.svg')no-repeat center top/cover;
+    mask: url('../assets/icons/return.svg') center/cover;
   }
   img{
     transform: rotate(-45deg);
     width: 30px;
     cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1750px) and (max-width: 1919px){
+  .options{
+    display: grid;
+    position: absolute;
+    top: 10px;  
+    right: 0;
+    z-index: 100;
+    margin: 30px 30px 30px 0;
+  }
+  .options_white{
+    path{
+      stroke: #fff;
+    }
+  }
+  .options_grey{
+    path{
+      stroke: #666;
+    }
+  }
+  .options__dividers, .options__firstDivider, .options__secondDivider{
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .options__firstDivider, .options__secondDivider{
+    position: absolute;
+  }
+  .options__links{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+  
+    a, button{
+      width: 30px;
+      height: 30px;
+      transform: rotate(-45deg);
+      cursor: pointer;
+      border: none;
+    }
+    button:focus{
+      outline: none;
+    }
+    .btn_white{
+      background: #fff;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #7bd2f2;
+      }
+    }
+    .btn_grey{
+      background: #666;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #7bd2f2;
+      }
+    }  
+    .socials{
+      mask: url('../assets/icons/logo.svg') center/cover;
+    }
+    .back{
+      mask: url('../assets/icons/return.svg') center/cover;
+    }
+    img{
+      transform: rotate(-45deg);
+      width: 30px;
+      cursor: pointer;
+    }
+  }
+}
+@media only screen and (min-width: 1600px) and (max-width: 1749px){
+  .options{
+    display: grid;
+    position: absolute;
+    top: 10px;  
+    right: 0;
+    z-index: 100;
+    margin: 30px 30px 30px 0;
+  }
+  .options_white{
+    path{
+      stroke: #fff;
+    }
+  }
+  .options_grey{
+    path{
+      stroke: #666;
+    }
+  }
+  .options__dividers, .options__firstDivider, .options__secondDivider{
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .options__firstDivider, .options__secondDivider{
+    position: absolute;
+  }
+  .options__links{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+  
+    a, button{
+      width: 30px;
+      height: 30px;
+      transform: rotate(-45deg);
+      cursor: pointer;
+      border: none;
+    }
+    button:focus{
+      outline: none;
+    }
+    .btn_white{
+      background: #fff;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #7bd2f2;
+      }
+    }
+    .btn_grey{
+      background: #666;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #7bd2f2;
+      }
+    }  
+    .socials{
+      mask: url('../assets/icons/logo.svg') center/cover;
+    }
+    .back{
+      mask: url('../assets/icons/return.svg') center/cover;
+    }
+    img{
+      transform: rotate(-45deg);
+      width: 30px;
+      cursor: pointer;
+    }
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1599px){
+  .options{
+    display: grid;
+    position: absolute;
+    top: 10px;  
+    right: 0;
+    z-index: 100;
+    margin: 30px 30px 30px 0;
+  }
+  .options_white{
+    path{
+      stroke: #fff;
+    }
+  }
+  .options_grey{
+    path{
+      stroke: #666;
+    }
+  }
+  .options__dividers, .options__firstDivider, .options__secondDivider{
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .options__firstDivider, .options__secondDivider{
+    position: absolute;
+  }
+  .options__links{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+  
+    a, button{
+      width: 30px;
+      height: 30px;
+      transform: rotate(-45deg);
+      cursor: pointer;
+      border: none;
+    }
+    button:focus{
+      outline: none;
+    }
+    .btn_white{
+      background: #fff;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #7bd2f2;
+      }
+    }
+    .btn_grey{
+      background: #666;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #7bd2f2;
+      }
+    }  
+    .socials{
+      mask: url('../assets/icons/logo.svg') center/cover;
+    }
+    .back{
+      mask: url('../assets/icons/return.svg') center/cover;
+    }
+    img{
+      transform: rotate(-45deg);
+      width: 30px;
+      cursor: pointer;
+    }
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1365px){
+  .options{
+    display: grid;
+    position: absolute;
+    top: 10px;  
+    right: 0;
+    z-index: 100;
+    margin: 30px 30px 30px 0;
+  }
+  .options_white{
+    path{
+      stroke: #fff;
+    }
+  }
+  .options_grey{
+    path{
+      stroke: #666;
+    }
+  }
+  .options__dividers, .options__firstDivider, .options__secondDivider{
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .options__firstDivider, .options__secondDivider{
+    position: absolute;
+  }
+  .options__links{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+  
+    a, button{
+      width: 30px;
+      height: 30px;
+      transform: rotate(-45deg);
+      cursor: pointer;
+      border: none;
+    }
+    button:focus{
+      outline: none;
+    }
+    .btn_white{
+      background: #fff;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #7bd2f2;
+      }
+    }
+    .btn_grey{
+      background: #666;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #7bd2f2;
+      }
+    }  
+    .socials{
+      mask: url('../assets/icons/logo.svg') center/cover;
+    }
+    .back{
+      mask: url('../assets/icons/return.svg') center/cover;
+    }
+    img{
+      transform: rotate(-45deg);
+      width: 30px;
+      cursor: pointer;
+    }
+  }
+}
+@media only screen and (min-width: 1152px) and (max-width: 1279px){
+  .options{
+    display: grid;
+    position: absolute;
+    top: 10px;  
+    right: 0;
+    z-index: 100;
+    margin: 30px 30px 30px 0;
+  }
+  .options_white{
+    path{
+      stroke: #fff;
+    }
+  }
+  .options_grey{
+    path{
+      stroke: #666;
+    }
+  }
+  .options__dividers, .options__firstDivider, .options__secondDivider{
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .options__firstDivider, .options__secondDivider{
+    position: absolute;
+  }
+  .options__links{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+  
+    a, button{
+      width: 30px;
+      height: 30px;
+      transform: rotate(-45deg);
+      cursor: pointer;
+      border: none;
+    }
+    button:focus{
+      outline: none;
+    }
+    .btn_white{
+      background: #fff;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #7bd2f2;
+      }
+    }
+    .btn_grey{
+      background: #666;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #7bd2f2;
+      }
+    }  
+    .socials{
+      mask: url('../assets/icons/logo.svg') center/cover;
+    }
+    .back{
+      mask: url('../assets/icons/return.svg') center/cover;
+    }
+    img{
+      transform: rotate(-45deg);
+      width: 30px;
+      cursor: pointer;
+    }
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1151px){
+  .options{
+    display: grid;
+    position: absolute;
+    top: 10px;  
+    right: 0;
+    z-index: 100;
+    margin: 30px 30px 30px 0;
+  }
+  .options_white{
+    path{
+      stroke: #fff;
+    }
+  }
+  .options_grey{
+    path{
+      stroke: #666;
+    }
+  }
+  .options__dividers, .options__firstDivider, .options__secondDivider{
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .options__firstDivider, .options__secondDivider{
+    position: absolute;
+  }
+  .options__links{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+  
+    a, button{
+      width: 30px;
+      height: 30px;
+      transform: rotate(-45deg);
+      cursor: pointer;
+      border: none;
+    }
+    button:focus{
+      outline: none;
+    }
+    .btn_white{
+      background: #fff;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #7bd2f2;
+      }
+    }
+    .btn_grey{
+      background: #666;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #7bd2f2;
+      }
+    }  
+    .socials{
+      mask: url('../assets/icons/logo.svg') center/cover;
+    }
+    .back{
+      mask: url('../assets/icons/return.svg') center/cover;
+    }
+    img{
+      transform: rotate(-45deg);
+      width: 30px;
+      cursor: pointer;
+    }
+  }
+}
+/* Adaptive mobile */
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  .options{
+    display: grid;
+    position: absolute;
+    top: 10px;  
+    right: 0;
+    z-index: 100;
+    margin: 30px 30px 30px 0;
+  }
+  .options_white{
+    path{
+      stroke: #fff;
+    }
+  }
+  .options_grey{
+    path{
+      stroke: #666;
+    }
+  }
+  .options__dividers, .options__firstDivider, .options__secondDivider{
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .options__firstDivider, .options__secondDivider{
+    position: absolute;
+  }
+  .options__links{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+  
+    a, button{
+      width: 30px;
+      height: 30px;
+      transform: rotate(-45deg);
+      cursor: pointer;
+      border: none;
+    }
+    button:focus{
+      outline: none;
+    }
+    .btn_white{
+      background: #fff;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #7bd2f2;
+      }
+    }
+    .btn_grey{
+      background: #666;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #7bd2f2;
+      }
+    }  
+    .socials{
+      mask: url('../assets/icons/logo.svg') center/cover;
+    }
+    .back{
+      mask: url('../assets/icons/return.svg') center/cover;
+    }
+    img{
+      transform: rotate(-45deg);
+      width: 30px;
+      cursor: pointer;
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .options{
+    display: grid;
+    position: absolute;
+    top: 10px;  
+    right: 0;
+    z-index: 100;
+    margin: 30px 30px 30px 0;
+  }
+  .options_white{
+    path{
+      stroke: #fff;
+    }
+  }
+  .options_grey{
+    path{
+      stroke: #666;
+    }
+  }
+  .options__dividers, .options__firstDivider, .options__secondDivider{
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .options__firstDivider, .options__secondDivider{
+    position: absolute;
+  }
+  .options__links{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+  
+    a, button{
+      width: 30px;
+      height: 30px;
+      transform: rotate(-45deg);
+      cursor: pointer;
+      border: none;
+    }
+    button:focus{
+      outline: none;
+    }
+    .btn_white{
+      background: #fff;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #7bd2f2;
+      }
+    }
+    .btn_grey{
+      background: #666;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #7bd2f2;
+      }
+    }  
+    .socials{
+      mask: url('../assets/icons/logo.svg') center/cover;
+    }
+    .back{
+      mask: url('../assets/icons/return.svg') center/cover;
+    }
+    img{
+      transform: rotate(-45deg);
+      width: 30px;
+      cursor: pointer;
+    }
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 767px) {
+  .options{
+    display: grid;
+    position: absolute;
+    top: 10px;  
+    right: 0;
+    z-index: 100;
+    margin: 30px 30px 30px 0;
+  }
+  .options_white{
+    path{
+      stroke: #fff;
+    }
+  }
+  .options_grey{
+    path{
+      stroke: #666;
+    }
+  }
+  .options__dividers, .options__firstDivider, .options__secondDivider{
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .options__firstDivider, .options__secondDivider{
+    position: absolute;
+  }
+  .options__links{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+  
+    a, button{
+      width: 30px;
+      height: 30px;
+      transform: rotate(-45deg);
+      cursor: pointer;
+      border: none;
+    }
+    button:focus{
+      outline: none;
+    }
+    .btn_white{
+      background: #fff;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #7bd2f2;
+      }
+    }
+    .btn_grey{
+      background: #666;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #7bd2f2;
+      }
+    }  
+    .socials{
+      mask: url('../assets/icons/logo.svg') center/cover;
+    }
+    .back{
+      mask: url('../assets/icons/return.svg') center/cover;
+    }
+    img{
+      transform: rotate(-45deg);
+      width: 30px;
+      cursor: pointer;
+    }
+  }
+}
+@media only screen and (min-width: 580px) and (max-width: 719px) {
+  .options{
+    display: none;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 579px) {
+  .options{
+    display: none;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 479px) {
+  .options{
+    display: none;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 374px) {
+  .options{
+    display: none;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .options{
+    display: none;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 319px) {
+  .options{
+    display: none;
   }
 }

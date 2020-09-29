@@ -56,7 +56,7 @@
   &__email{
     width: max-content;
     
-    a{
+    .resume__emailLink{
       text-decoration: none;
       color: #666;
 
@@ -80,14 +80,1309 @@
     }
   }
   &__github{
-    mask: url('../assets/icons/github.svg') no-repeat center top/cover;
+    mask: url('../assets/icons/github.svg') center/cover;
   }
   &__linkedin{
-    mask: url('../assets/icons/linkedin.svg') no-repeat center top/cover;
+    mask: url('../assets/icons/linkedin.svg') center/cover;
   }
   &__contacts, &__item{
     display: grid;
     gap: 5%;
     width: 95%;
+  }
+}
+
+@media only screen and (min-width: 1750px) and (max-width: 1919px){
+  .resume{
+    display: grid;
+    grid-template-rows: max-content max-content;
+    width: 65%;
+    height: 94%;
+    padding: 1%;
+    gap: 1%;
+    // margin: 0 50%;  
+    background: rgba($color: #fff, $alpha: 0.8);
+    border: 1px dashed #666;
+    color: #666;
+  
+    &__description{
+      height: max-content;
+    }
+    &__head{
+      font-family: PhilosopherRegular;
+      color: #666;
+      margin: 0;
+  
+      &_large{
+        text-align: center;
+        font-size: 30px;
+      }
+      &_small{
+        font-size: 25px;
+      }
+    }
+    &__main{
+      display: grid;
+      grid-template-columns: 30% 65%;
+      gap: 0 1%;
+      // margin-top: 20px;
+      font-family: YanoneLight;
+      font-size: 21px;
+    }
+    &__secondInfo{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      gap: 25% 0;
+      margin-top: 10px;
+      font-family: YanoneLight;
+      font-size: 21px;
+      height: max-content;
+    }
+    &__avatar{
+      width: 240px;
+      box-shadow: 0 0 10px 5px rgba(#666, .6);
+    }
+    &__images{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      justify-items: center;
+      width: 50%;
+    }
+    &__email{
+      width: max-content;
+      
+      .resume__emailLink{
+        text-decoration: none;
+        color: #666;
+  
+        &:focus{
+          outline: none;
+        }
+  
+        &:hover, &:focus-within{
+          color: #f7a476;
+        }
+      }
+    }
+    &__github, &__linkedin{
+      width: 30px;
+      height: 30px;
+      background-color: #666;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #f7a476;
+      }
+    }
+    &__github{
+      mask: url('../assets/icons/github.svg') center/cover;
+    }
+    &__linkedin{
+      mask: url('../assets/icons/linkedin.svg') center/cover;
+    }
+    &__contacts, &__item{
+      display: grid;
+      gap: 5%;
+      width: 95%;
+    }
+  }
+}
+@media only screen and (min-width: 1600px) and (max-width: 1749px){
+  .resume{
+    display: grid;
+    grid-template-rows: max-content max-content;
+    width: 65%;
+    height: 94%;
+    padding: 1%;
+    gap: 1%;
+    // margin: 0 50%;  
+    background: rgba($color: #fff, $alpha: 0.8);
+    border: 1px dashed #666;
+    color: #666;
+  
+    &__description{
+      height: max-content;
+    }
+    &__head{
+      font-family: PhilosopherRegular;
+      color: #666;
+      margin: 0;
+  
+      &_large{
+        text-align: center;
+        font-size: 30px;
+      }
+      &_small{
+        font-size: 25px;
+      }
+    }
+    &__main{
+      display: grid;
+      grid-template-columns: 30% 65%;
+      gap: 0 1%;
+      // margin-top: 20px;
+      font-family: YanoneLight;
+      font-size: 21px;
+    }
+    &__secondInfo{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      gap: 25% 0;
+      margin-top: 10px;
+      font-family: YanoneLight;
+      font-size: 21px;
+      height: max-content;
+    }
+    &__avatar{
+      width: 240px;
+      box-shadow: 0 0 10px 5px rgba(#666, .6);
+    }
+    &__images{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      justify-items: center;
+      width: 50%;
+    }
+    &__email{
+      width: max-content;
+      
+      .resume__emailLink{
+        text-decoration: none;
+        color: #666;
+  
+        &:focus{
+          outline: none;
+        }
+  
+        &:hover, &:focus-within{
+          color: #f7a476;
+        }
+      }
+    }
+    &__github, &__linkedin{
+      width: 30px;
+      height: 30px;
+      background-color: #666;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #f7a476;
+      }
+    }
+    &__github{
+      mask: url('../assets/icons/github.svg') center/cover;
+    }
+    &__linkedin{
+      mask: url('../assets/icons/linkedin.svg') center/cover;
+    }
+    &__contacts, &__item{
+      display: grid;
+      gap: 5%;
+      width: 95%;
+    }
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1599px){
+  .resume{
+    display: grid;
+    grid-template-rows: max-content max-content;
+    width: 65%;
+    height: 94%;
+    padding: 1%;
+    gap: 1%;
+    // margin: 0 50%;  
+    background: rgba($color: #fff, $alpha: 0.8);
+    border: 1px dashed #666;
+    color: #666;
+  
+    &__description{
+      height: max-content;
+    }
+    &__head{
+      font-family: PhilosopherRegular;
+      color: #666;
+      margin: 0;
+  
+      &_large{
+        text-align: center;
+        font-size: 30px;
+      }
+      &_small{
+        font-size: 25px;
+      }
+    }
+    &__main{
+      display: grid;
+      grid-template-columns: 30% 65%;
+      gap: 0 1%;
+      // margin-top: 20px;
+      font-family: YanoneLight;
+      font-size: 21px;
+    }
+    &__secondInfo{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      gap: 25% 0;
+      margin-top: 10px;
+      font-family: YanoneLight;
+      font-size: 21px;
+      height: max-content;
+    }
+    &__avatar{
+      width: 240px;
+      box-shadow: 0 0 10px 5px rgba(#666, .6);
+    }
+    &__images{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      justify-items: center;
+      width: 50%;
+    }
+    &__email{
+      width: max-content;
+      
+      .resume__emailLink{
+        text-decoration: none;
+        color: #666;
+  
+        &:focus{
+          outline: none;
+        }
+  
+        &:hover, &:focus-within{
+          color: #f7a476;
+        }
+      }
+    }
+    &__github, &__linkedin{
+      width: 30px;
+      height: 30px;
+      background-color: #666;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #f7a476;
+      }
+    }
+    &__github{
+      mask: url('../assets/icons/github.svg') center/cover;
+    }
+    &__linkedin{
+      mask: url('../assets/icons/linkedin.svg') center/cover;
+    }
+    &__contacts, &__item{
+      display: grid;
+      gap: 5%;
+      width: 95%;
+    }
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1365px){
+  .resume{
+    display: grid;
+    grid-template-rows: max-content max-content;
+    width: 65%;
+    height: 94%;
+    padding: 1%;
+    gap: 1%;
+    // margin: 0 50%;  
+    background: rgba($color: #fff, $alpha: 0.8);
+    border: 1px dashed #666;
+    color: #666;
+  
+    &__description{
+      height: max-content;
+    }
+    &__head{
+      font-family: PhilosopherRegular;
+      color: #666;
+      margin: 0;
+  
+      &_large{
+        text-align: center;
+        font-size: 30px;
+      }
+      &_small{
+        font-size: 25px;
+      }
+    }
+    &__main{
+      display: grid;
+      grid-template-columns: 30% 65%;
+      gap: 0 1%;
+      // margin-top: 20px;
+      font-family: YanoneLight;
+      font-size: 21px;
+    }
+    &__secondInfo{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      gap: 25% 0;
+      margin-top: 10px;
+      font-family: YanoneLight;
+      font-size: 21px;
+      height: max-content;
+    }
+    &__avatar{
+      width: 240px;
+      box-shadow: 0 0 10px 5px rgba(#666, .6);
+    }
+    &__images{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      justify-items: center;
+      width: 50%;
+    }
+    &__email{
+      width: max-content;
+      
+      .resume__emailLink{
+        text-decoration: none;
+        color: #666;
+  
+        &:focus{
+          outline: none;
+        }
+  
+        &:hover, &:focus-within{
+          color: #f7a476;
+        }
+      }
+    }
+    &__github, &__linkedin{
+      width: 30px;
+      height: 30px;
+      background-color: #666;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #f7a476;
+      }
+    }
+    &__github{
+      mask: url('../assets/icons/github.svg') center/cover;
+    }
+    &__linkedin{
+      mask: url('../assets/icons/linkedin.svg') center/cover;
+    }
+    &__contacts, &__item{
+      display: grid;
+      gap: 5%;
+      width: 95%;
+    }
+  }
+}
+@media only screen and (min-width: 1152px) and (max-width: 1279px){
+  .resume{
+    display: grid;
+    grid-template-rows: max-content max-content;
+    width: 65%;
+    height: 94%;
+    padding: 1%;
+    gap: 1%;
+    // margin: 0 50%;  
+    background: rgba($color: #fff, $alpha: 0.8);
+    border: 1px dashed #666;
+    color: #666;
+  
+    &__description{
+      height: max-content;
+    }
+    &__head{
+      font-family: PhilosopherRegular;
+      color: #666;
+      margin: 0;
+  
+      &_large{
+        text-align: center;
+        font-size: 30px;
+      }
+      &_small{
+        font-size: 25px;
+      }
+    }
+    &__main{
+      display: grid;
+      grid-template-columns: 30% 65%;
+      gap: 0 1%;
+      // margin-top: 20px;
+      font-family: YanoneLight;
+      font-size: 21px;
+    }
+    &__secondInfo{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      gap: 25% 0;
+      margin-top: 10px;
+      font-family: YanoneLight;
+      font-size: 21px;
+      height: max-content;
+    }
+    &__avatar{
+      width: 240px;
+      box-shadow: 0 0 10px 5px rgba(#666, .6);
+    }
+    &__images{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      justify-items: center;
+      width: 50%;
+    }
+    &__email{
+      width: max-content;
+      
+      .resume__emailLink{
+        text-decoration: none;
+        color: #666;
+  
+        &:focus{
+          outline: none;
+        }
+  
+        &:hover, &:focus-within{
+          color: #f7a476;
+        }
+      }
+    }
+    &__github, &__linkedin{
+      width: 30px;
+      height: 30px;
+      background-color: #666;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #f7a476;
+      }
+    }
+    &__github{
+      mask: url('../assets/icons/github.svg') center/cover;
+    }
+    &__linkedin{
+      mask: url('../assets/icons/linkedin.svg') center/cover;
+    }
+    &__contacts, &__item{
+      display: grid;
+      gap: 5%;
+      width: 95%;
+    }
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1151px){
+  .resume{
+    display: grid;
+    grid-template-rows: max-content max-content;
+    width: 65%;
+    height: 94%;
+    padding: 1%;
+    gap: 1%;
+    // margin: 0 50%;  
+    background: rgba($color: #fff, $alpha: 0.8);
+    border: 1px dashed #666;
+    color: #666;
+  
+    &__description{
+      height: max-content;
+    }
+    &__head{
+      font-family: PhilosopherRegular;
+      color: #666;
+      margin: 0;
+  
+      &_large{
+        text-align: center;
+        font-size: 30px;
+      }
+      &_small{
+        font-size: 25px;
+      }
+    }
+    &__main{
+      display: grid;
+      grid-template-columns: 30% 65%;
+      gap: 0 1%;
+      // margin-top: 20px;
+      font-family: YanoneLight;
+      font-size: 21px;
+    }
+    &__secondInfo{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      gap: 25% 0;
+      margin-top: 10px;
+      font-family: YanoneLight;
+      font-size: 21px;
+      height: max-content;
+    }
+    &__avatar{
+      width: 240px;
+      box-shadow: 0 0 10px 5px rgba(#666, .6);
+    }
+    &__images{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      justify-items: center;
+      width: 50%;
+    }
+    &__email{
+      width: max-content;
+      
+      .resume__emailLink{
+        text-decoration: none;
+        color: #666;
+  
+        &:focus{
+          outline: none;
+        }
+  
+        &:hover, &:focus-within{
+          color: #f7a476;
+        }
+      }
+    }
+    &__github, &__linkedin{
+      width: 30px;
+      height: 30px;
+      background-color: #666;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #f7a476;
+      }
+    }
+    &__github{
+      mask: url('../assets/icons/github.svg') center/cover;
+    }
+    &__linkedin{
+      mask: url('../assets/icons/linkedin.svg') center/cover;
+    }
+    &__contacts, &__item{
+      display: grid;
+      gap: 5%;
+      width: 95%;
+    }
+  }
+}
+/* Adaptive mobile */
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  .resume{
+    display: grid;
+    grid-template-rows: max-content max-content;
+    width: 65%;
+    height: 94%;
+    padding: 1%;
+    gap: 1%;
+    // margin: 0 50%;  
+    background: rgba($color: #fff, $alpha: 0.8);
+    border: 1px dashed #666;
+    color: #666;
+  
+    &__description{
+      height: max-content;
+    }
+    &__head{
+      font-family: PhilosopherRegular;
+      color: #666;
+      margin: 0;
+  
+      &_large{
+        text-align: center;
+        font-size: 30px;
+      }
+      &_small{
+        font-size: 25px;
+      }
+    }
+    &__main{
+      display: grid;
+      grid-template-columns: 30% 65%;
+      gap: 0 1%;
+      // margin-top: 20px;
+      font-family: YanoneLight;
+      font-size: 21px;
+    }
+    &__secondInfo{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      gap: 25% 0;
+      margin-top: 10px;
+      font-family: YanoneLight;
+      font-size: 21px;
+      height: max-content;
+    }
+    &__avatar{
+      width: 240px;
+      box-shadow: 0 0 10px 5px rgba(#666, .6);
+    }
+    &__images{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      justify-items: center;
+      width: 50%;
+    }
+    &__email{
+      width: max-content;
+      
+      .resume__emailLink{
+        text-decoration: none;
+        color: #666;
+  
+        &:focus{
+          outline: none;
+        }
+  
+        &:hover, &:focus-within{
+          color: #f7a476;
+        }
+      }
+    }
+    &__github, &__linkedin{
+      width: 30px;
+      height: 30px;
+      background-color: #666;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #f7a476;
+      }
+    }
+    &__github{
+      mask: url('../assets/icons/github.svg') center/cover;
+    }
+    &__linkedin{
+      mask: url('../assets/icons/linkedin.svg') center/cover;
+    }
+    &__contacts, &__item{
+      display: grid;
+      gap: 5%;
+      width: 95%;
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .resume{
+    display: grid;
+    grid-template-rows: max-content max-content;
+    width: 65%;
+    height: 94%;
+    padding: 1%;
+    gap: 1%;
+    // margin: 0 50%;  
+    background: rgba($color: #fff, $alpha: 0.8);
+    border: 1px dashed #666;
+    color: #666;
+  
+    &__description{
+      height: max-content;
+    }
+    &__head{
+      font-family: PhilosopherRegular;
+      color: #666;
+      margin: 0;
+  
+      &_large{
+        text-align: center;
+        font-size: 30px;
+      }
+      &_small{
+        font-size: 25px;
+      }
+    }
+    &__main{
+      display: grid;
+      grid-template-columns: 30% 65%;
+      gap: 0 1%;
+      // margin-top: 20px;
+      font-family: YanoneLight;
+      font-size: 21px;
+    }
+    &__secondInfo{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      gap: 25% 0;
+      margin-top: 10px;
+      font-family: YanoneLight;
+      font-size: 21px;
+      height: max-content;
+    }
+    &__avatar{
+      width: 240px;
+      box-shadow: 0 0 10px 5px rgba(#666, .6);
+    }
+    &__images{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      justify-items: center;
+      width: 50%;
+    }
+    &__email{
+      width: max-content;
+      
+      .resume__emailLink{
+        text-decoration: none;
+        color: #666;
+  
+        &:focus{
+          outline: none;
+        }
+  
+        &:hover, &:focus-within{
+          color: #f7a476;
+        }
+      }
+    }
+    &__github, &__linkedin{
+      width: 30px;
+      height: 30px;
+      background-color: #666;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #f7a476;
+      }
+    }
+    &__github{
+      mask: url('../assets/icons/github.svg') center/cover;
+    }
+    &__linkedin{
+      mask: url('../assets/icons/linkedin.svg') center/cover;
+    }
+    &__contacts, &__item{
+      display: grid;
+      gap: 5%;
+      width: 95%;
+    }
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 767px) {
+  .resume{
+    display: grid;
+    grid-template-rows: max-content max-content;
+    width: 65%;
+    height: 94%;
+    padding: 1%;
+    gap: 1%;
+    // margin: 0 50%;  
+    background: rgba($color: #fff, $alpha: 0.8);
+    border: 1px dashed #666;
+    color: #666;
+  
+    &__description{
+      height: max-content;
+    }
+    &__head{
+      font-family: PhilosopherRegular;
+      color: #666;
+      margin: 0;
+  
+      &_large{
+        text-align: center;
+        font-size: 30px;
+      }
+      &_small{
+        font-size: 25px;
+      }
+    }
+    &__main{
+      display: grid;
+      grid-template-columns: 30% 65%;
+      gap: 0 1%;
+      // margin-top: 20px;
+      font-family: YanoneLight;
+      font-size: 21px;
+    }
+    &__secondInfo{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      gap: 25% 0;
+      margin-top: 10px;
+      font-family: YanoneLight;
+      font-size: 21px;
+      height: max-content;
+    }
+    &__avatar{
+      width: 240px;
+      box-shadow: 0 0 10px 5px rgba(#666, .6);
+    }
+    &__images{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      justify-items: center;
+      width: 50%;
+    }
+    &__email{
+      width: max-content;
+      
+      .resume__emailLink{
+        text-decoration: none;
+        color: #666;
+  
+        &:focus{
+          outline: none;
+        }
+  
+        &:hover, &:focus-within{
+          color: #f7a476;
+        }
+      }
+    }
+    &__github, &__linkedin{
+      width: 30px;
+      height: 30px;
+      background-color: #666;
+      transition: background .5s ease;
+  
+      &:hover, &:focus{
+        background: #f7a476;
+      }
+    }
+    &__github{
+      mask: url('../assets/icons/github.svg') center/cover;
+    }
+    &__linkedin{
+      mask: url('../assets/icons/linkedin.svg') center/cover;
+    }
+    &__contacts, &__item{
+      display: grid;
+      gap: 5%;
+      width: 95%;
+    }
+  }
+}
+@media only screen and (min-width: 580px) and (max-width: 719px) {
+  .resume{
+    display: grid;
+    grid-template-rows: max-content;
+    width: 99%;
+    height: 100%;
+    padding: 0;
+    gap: 1%;
+    background: rgba($color: #fff, $alpha: 0.8);
+    border: 1px dashed #666;
+    color: #666;
+    overflow-y: scroll;
+
+    &__description{
+      height: max-content;
+    }
+    &__head{
+      font-family: PhilosopherRegular;
+      color: #666;
+      margin: 0;
+      text-align: center;
+  
+      &_large{
+        text-align: center;
+        font-size: 30px;
+      }
+      &_small{
+        font-size: 25px;
+      }
+    }
+    &__main{
+      display: grid;
+      grid-template-columns: 90%;
+      justify-content: center;
+      gap: 0 1%;
+      font-family: YanoneLight;
+      font-size: 21px;
+    }
+    &__secondInfo{
+      display: grid;
+      grid-template-columns: 90%;
+      gap: 15% 0;
+      margin-top: 10px;
+      justify-content: center;
+      font-family: YanoneLight;
+      font-size: 21px;
+      height: max-content;
+    }
+    &__avatar{
+      display: none;
+    }
+    &__images{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      justify-items: center;
+      width: 100%;
+    }
+    &__email{
+      width: max-content;
+    }
+    &__github, &__linkedin{
+      width: 30px;
+      height: 30px;
+      background-color: #666;
+      transition: background .5s ease;
+    }
+    &__contacts, &__item{
+      display: grid;
+      gap: 5%;
+      width: 90%;
+    }
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 579px) {
+  .resume{
+    display: grid;
+    grid-template-rows: max-content;
+    width: 99%;
+    height: 100%;
+    padding: 0;
+    gap: 1%;
+    background: rgba($color: #fff, $alpha: 0.8);
+    border: 1px dashed #666;
+    color: #666;
+    overflow-y: scroll;
+
+    &__description{
+      height: max-content;
+    }
+    &__head{
+      font-family: PhilosopherRegular;
+      color: #666;
+      margin: 0;
+      text-align: center;
+  
+      &_large{
+        text-align: center;
+        font-size: 30px;
+      }
+      &_small{
+        font-size: 25px;
+      }
+    }
+    &__main{
+      display: grid;
+      grid-template-columns: 90%;
+      justify-content: center;
+      gap: 0 1%;
+      font-family: YanoneLight;
+      font-size: 21px;
+    }
+    &__secondInfo{
+      display: grid;
+      grid-template-columns: 90%;
+      gap: 15% 0;
+      margin-top: 10px;
+      justify-content: center;
+      font-family: YanoneLight;
+      font-size: 21px;
+      height: max-content;
+    }
+    &__avatar{
+      display: none;
+    }
+    &__images{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      justify-items: center;
+      width: 100%;
+    }
+    &__email{
+      width: max-content;
+    }
+    &__github, &__linkedin{
+      width: 30px;
+      height: 30px;
+      background-color: #666;
+      transition: background .5s ease;
+    }
+    &__contacts, &__item{
+      display: grid;
+      gap: 5%;
+      width: 90%;
+    }
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 479px) {
+  .resume{
+    display: grid;
+    grid-template-rows: max-content;
+    width: 99%;
+    height: 100%;
+    padding: 0;
+    gap: 1%;
+    background: rgba($color: #fff, $alpha: 0.8);
+    border: 1px dashed #666;
+    color: #666;
+    overflow-y: scroll;
+
+    &__description{
+      height: max-content;
+    }
+    &__head{
+      font-family: PhilosopherRegular;
+      color: #666;
+      margin: 0;
+      text-align: center;
+  
+      &_large{
+        text-align: center;
+        font-size: 30px;
+      }
+      &_small{
+        font-size: 25px;
+      }
+    }
+    &__main{
+      display: grid;
+      grid-template-columns: 90%;
+      justify-content: center;
+      gap: 0 1%;
+      font-family: YanoneLight;
+      font-size: 21px;
+    }
+    &__secondInfo{
+      display: grid;
+      grid-template-columns: 90%;
+      gap: 15% 0;
+      margin-top: 10px;
+      justify-content: center;
+      font-family: YanoneLight;
+      font-size: 21px;
+      height: max-content;
+    }
+    &__avatar{
+      display: none;
+    }
+    &__images{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      justify-items: center;
+      width: 100%;
+    }
+    &__email{
+      width: max-content;
+    }
+    &__github, &__linkedin{
+      width: 30px;
+      height: 30px;
+      background-color: #666;
+      transition: background .5s ease;
+    }
+    &__contacts, &__item{
+      display: grid;
+      gap: 5%;
+      width: 90%;
+    }
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 374px) {
+  .resume{
+    display: grid;
+    grid-template-rows: max-content;
+    width: 99%;
+    height: 100%;
+    padding: 0;
+    gap: 1%;
+    background: rgba($color: #fff, $alpha: 0.8);
+    border: 1px dashed #666;
+    color: #666;
+    overflow-y: scroll;
+
+    &__description{
+      height: max-content;
+    }
+    &__head{
+      font-family: PhilosopherRegular;
+      color: #666;
+      margin: 0;
+      text-align: center;
+  
+      &_large{
+        text-align: center;
+        font-size: 30px;
+      }
+      &_small{
+        font-size: 25px;
+      }
+    }
+    &__main{
+      display: grid;
+      grid-template-columns: 90%;
+      justify-content: center;
+      gap: 0 1%;
+      font-family: YanoneLight;
+      font-size: 21px;
+    }
+    &__secondInfo{
+      display: grid;
+      grid-template-columns: 90%;
+      gap: 15% 0;
+      margin-top: 10px;
+      justify-content: center;
+      font-family: YanoneLight;
+      font-size: 21px;
+      height: max-content;
+    }
+    &__avatar{
+      display: none;
+    }
+    &__images{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      justify-items: center;
+      width: 100%;
+    }
+    &__email{
+      width: max-content;
+    }
+    &__github, &__linkedin{
+      width: 30px;
+      height: 30px;
+      background-color: #666;
+      transition: background .5s ease;
+    }
+    &__contacts, &__item{
+      display: grid;
+      gap: 5%;
+      width: 90%;
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .resume{
+    display: grid;
+    grid-template-rows: max-content;
+    width: 99%;
+    height: 100%;
+    padding: 0;
+    gap: 1%;
+    background: rgba($color: #fff, $alpha: 0.8);
+    border: 1px dashed #666;
+    color: #666;
+    overflow-y: scroll;
+
+    &__description{
+      height: max-content;
+    }
+    &__head{
+      font-family: PhilosopherRegular;
+      color: #666;
+      margin: 0;
+      text-align: center;
+  
+      &_large{
+        text-align: center;
+        font-size: 30px;
+      }
+      &_small{
+        font-size: 25px;
+      }
+    }
+    &__main{
+      display: grid;
+      grid-template-columns: 90%;
+      justify-content: center;
+      gap: 0 1%;
+      font-family: YanoneLight;
+      font-size: 21px;
+    }
+    &__secondInfo{
+      display: grid;
+      grid-template-columns: 90%;
+      gap: 15% 0;
+      margin-top: 10px;
+      justify-content: center;
+      font-family: YanoneLight;
+      font-size: 21px;
+      height: max-content;
+    }
+    &__avatar{
+      display: none;
+    }
+    &__images{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      justify-items: center;
+      width: 100%;
+    }
+    &__email{
+      width: max-content;
+    }
+    &__github, &__linkedin{
+      width: 30px;
+      height: 30px;
+      background-color: #666;
+      transition: background .5s ease;
+    }
+    &__contacts, &__item{
+      display: grid;
+      gap: 5%;
+      width: 90%;
+    }
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 319px) {
+  .resume{
+    display: grid;
+    grid-template-rows: max-content;
+    width: 99%;
+    height: 100%;
+    padding: 0;
+    gap: 1%;
+    background: rgba($color: #fff, $alpha: 0.8);
+    border: 1px dashed #666;
+    color: #666;
+    overflow-y: scroll;
+
+    &__description{
+      height: max-content;
+    }
+    &__head{
+      font-family: PhilosopherRegular;
+      color: #666;
+      margin: 0;
+      text-align: center;
+  
+      &_large{
+        text-align: center;
+        font-size: 30px;
+      }
+      &_small{
+        font-size: 25px;
+      }
+    }
+    &__main{
+      display: grid;
+      grid-template-columns: 90%;
+      justify-content: center;
+      gap: 0 1%;
+      font-family: YanoneLight;
+      font-size: 21px;
+    }
+    &__secondInfo{
+      display: grid;
+      grid-template-columns: 90%;
+      gap: 15% 0;
+      margin-top: 10px;
+      justify-content: center;
+      font-family: YanoneLight;
+      font-size: 21px;
+      height: max-content;
+    }
+    &__avatar{
+      display: none;
+    }
+    &__images{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      justify-items: center;
+      width: 100%;
+    }
+    &__email{
+      width: max-content;
+    }
+    &__github, &__linkedin{
+      width: 30px;
+      height: 30px;
+      background-color: #666;
+      transition: background .5s ease;
+    }
+    &__contacts, &__item{
+      display: grid;
+      gap: 5%;
+      width: 90%;
+    }
   }
 }

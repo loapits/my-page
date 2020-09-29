@@ -29,16 +29,18 @@ export const Navigation = React.memo(() => {
         <h1 className={styles.name}>{main.title}</h1>
       </div>
       <nav className={styles.navigation__items}>
-        <ul>
+        <ul className={styles.navigation__ul}>
           {navigation.map((li: NavigationItem) =>
             <li 
               onClick={switchDispatch} 
               key={li.id}
+              className={styles.navigation__li}
             >
               <NavLink 
                 tabIndex={li.id+1} 
                 aria-label={li.title} 
                 to={li.link}
+                className={styles.navigation__link}
               >
                 {li.title}
               </NavLink>

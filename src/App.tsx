@@ -12,6 +12,7 @@ export const App = React.memo(() => {
   return(
     <Suspense fallback={<CoffeeCup class='cupBlock darkCup'/>}>
       <Menu />
+      {/* <CoffeeCup class='cupBlock darkCup'/> */}
       <Switch>
         <Route path="/" exact render={() => <MainPage />} />
         <Route path="/resume" exact render={() => <Resume />} />

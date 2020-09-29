@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import resumeStyles from '../../style/Resume.module.scss'
+import styles from '../../style/Resume.module.scss'
 import { ResumeItem } from './Resume__item'
 import { State } from '../../types/state'
 import { getResume } from '../../state/resume_reducer'
@@ -18,17 +18,17 @@ export const Resume = React.memo(() => {
   }, [])
   
   document.title = 'Резюме'
-  const headLarge = [resumeStyles.resume__head, resumeStyles.resume__head_large].join(' ')
-  const headSmall = [resumeStyles.resume__head, resumeStyles.resume__head_small].join(' ')
+  const headLarge = [styles.resume__head, styles.resume__head_large].join(' ')
+  const headSmall = [styles.resume__head, styles.resume__head_small].join(' ')
   
   return (
     <main className='pageContainer'>
-      <div className={resumeStyles.resume}>
-        <section className={resumeStyles.resume__description}>
+      <div className={styles.resume}>
+        <section className={styles.resume__description}>
           <h1 className={headLarge}>{resume.title}</h1>
-          <article className={resumeStyles.resume__main}>
+          <article className={styles.resume__main}>
             <img 
-              className={resumeStyles.resume__avatar} 
+              className={styles.resume__avatar} 
               src={resume.avatar} 
               alt={resume.alt} 
             />
@@ -37,31 +37,34 @@ export const Resume = React.memo(() => {
           </article>
         </section>
         {resume.contacts && 
-          <section className={resumeStyles.resume__secondInfo}>
-            <article className={resumeStyles.resume__contacts}>
+          <section className={styles.resume__secondInfo}>
+            <article className={styles.resume__contacts}>
               <h2 className={headSmall}>{resume.contacts.title}</h2>
               <span><span>Ф.И.О: </span>{resume.contacts.fullName}</span>
               <span><span>Номер: </span>{resume.contacts.number}</span>
               {/*eslint-disable-next-line*/}
               <span
-                className={resumeStyles.resume__email}>
+                className={styles.resume__email}>
                   <span>Mail: </span>
-                  <a href={'mailto:'+resume.contacts.email}>
+                  <a 
+                    className={styles.resume__emailLink}
+                    href={'mailto:'+resume.contacts.email}
+                  >
                     {resume.contacts.email}
                   </a>
               </span>
-              <span className={resumeStyles.resume__images}>
+              <span className={styles.resume__images}>
                 {/* eslint-disable-next-line */}
                 <a 
                   href={resume.contacts.socials.github}
                   aria-label="Ссылка на гитхаб" 
-                  className={resumeStyles.resume__github}
+                  className={styles.resume__github}
                 ></a>
                 {/* eslint-disable-next-line */}
                 <a
                   href={resume.contacts.socials.linkedin} 
                   aria-label="Ссылка на linkedin" 
-                  className={resumeStyles.resume__linkedin}
+                  className={styles.resume__linkedin}
                 ></a>
               </span>
               <span>{resume.contacts.location}</span>
