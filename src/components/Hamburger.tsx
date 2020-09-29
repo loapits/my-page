@@ -22,7 +22,7 @@ export const Hamburger = React.memo(() => {
   }
 
   return(
-    <button tabIndex={!isChanged ? 1 : 5} onClick={switchDispatch} className={!isChanged ? hamburger : crossHamburger}>
+    <button tabIndex={0} onClick={switchDispatch} className={!isChanged ? hamburger : crossHamburger}>
       <span className={styles.span1}></span>
       <span className={styles.span2}></span>
       <span className={styles.span3} ></span>

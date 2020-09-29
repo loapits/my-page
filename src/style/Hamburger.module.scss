@@ -1,4 +1,4 @@
-.menuToggle {
+.menuToggle{
   display: grid;
   justify-items: center;
   align-items: center;
@@ -18,10 +18,10 @@
     border-radius: 4px;
     transition: all .35s cubic-bezier(.08,.81,.87,.71);
   }
-  .span1 {
+  .span1{
     transform-origin: 3px 0px;
   }
-  .span3 {
+  .span3{
     transform-origin: bottom right;
   }
   &:focus{
@@ -36,18 +36,17 @@
     } 
   }
 
-  &.active .span1 {
+  &.active .span1{
     background: #666;
     transform: rotate(45deg) translate(5px);
   }
-  &.active .span2 {
+  &.active .span2{
     background: #666;
     transform: rotate(495deg) translate(4px);   
   }
-  &.active .span3 {
+  &.active .span3{
     background: #666;
     transform: rotate(45deg);
     opacity: 0;
   } 
-
 }
