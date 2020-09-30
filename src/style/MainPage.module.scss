@@ -151,7 +151,6 @@
     }
   }
 }
-
 /* Adaptive mobile */
 @media only screen and (min-width: 992px) and (max-width: 1023px) {
   .header{
@@ -241,6 +240,7 @@
     }
   }
 }
+//done
 @media only screen and (min-width: 480px) and (max-width: 579px) {
   .header{
     display: grid;
@@ -250,19 +250,22 @@
     justify-items: center;
   
     .logo{
+      justify-self: center;
       align-self: flex-end;
       width: 150px;
     }
     .name{
+      justify-self: center;
       align-self: flex-start;
       font-family: PhilosopherRegular;
-      font-size: 60px;
+      font-size: 50px;
       font-weight: 400;
       color: #fff;
       margin: 0;
     }
   }
 }
+//done
 @media only screen and (min-width: 375px) and (max-width: 479px) {
   .header{
     display: grid;
@@ -272,20 +275,21 @@
     justify-items: center;
   
     .logo{
-      align-self: flex-end;
-      width: 150px;
+      display: none;
     }
     .name{
-      align-self: flex-start;
+      align-self: center;
+      text-align: center;
       font-family: PhilosopherRegular;
-      font-size: 60px;
+      font-size: 50px;
       font-weight: 400;
       color: #fff;
       margin: 0;
     }
   }
 }
-@media only screen and (min-width: 360px) and (max-width: 374px) {
+//done
+@media only screen and (min-width: 320px) and (max-width: 374px) {
   .header{
     display: grid;
     position: absolute;
@@ -294,41 +298,20 @@
     justify-items: center;
   
     .logo{
-      align-self: flex-end;
-      width: 150px;
+      display: none;
     }
     .name{
-      align-self: flex-start;
+      align-self: center;
+      text-align: center;
       font-family: PhilosopherRegular;
-      font-size: 60px;
+      font-size: 45px;
       font-weight: 400;
       color: #fff;
       margin: 0;
     }
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 359px) {
-  .header{
-    display: grid;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    justify-items: center;
-  
-    .logo{
-      align-self: flex-end;
-      width: 150px;
-    }
-    .name{
-      align-self: flex-start;
-      font-family: PhilosopherRegular;
-      font-size: 60px;
-      font-weight: 400;
-      color: #fff;
-      margin: 0;
-    }
-  }
-}
+//done
 @media screen and (min-width: 0px) and (max-width: 319px) {
   .header{
     display: grid;
@@ -338,13 +321,13 @@
     justify-items: center;
   
     .logo{
-      align-self: flex-end;
-      width: 150px;
+      display: none;
     }
     .name{
-      align-self: flex-start;
+      align-self: center;
+      text-align: center;
       font-family: PhilosopherRegular;
-      font-size: 60px;
+      font-size: 40px;
       font-weight: 400;
       color: #fff;
       margin: 0;

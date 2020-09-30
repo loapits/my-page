@@ -1841,92 +1841,78 @@
     border-right: 3px solid #f7a476;
   }
 }
+//done
 @media only screen and (min-width: 480px) and (max-width: 579px) {
   .portfolio{
     display: grid;
     position: absolute;
-    grid-template-columns: 30% 68%;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
     gap: 2%;
-    top: 1%;
-    width: 74%;
-    height: 93%;
+    top: 0;
+    width: 97%;
+    height: 98%;
     padding: 1%;
     background: rgba($color: #fff, $alpha: 0.8);
     border: 1px dashed #666;
+    overflow: scroll;
   
     &__list{
       align-self: center;
-      width: 100%;
+      justify-self: center;
+      width: 70%;
       height: 80%;
-      overflow-y: scroll;
-      overflow: auto;
-      scrollbar-width: none;
-  
-      &::-webkit-scrollbar{
-        width: 0px;
-        background: transparent;
-      }
     }
     &__listItem{
-      width: 100%;
-      height: max-content; 
+      width: 70%;
+      height: max-content;
+      justify-self: center;
       color: #666;
-      
-      &:hover{
-        cursor: pointer;
-        
-        .portfolio__listDate{
-          border-right: 3px solid #aaa;
-        }
-        .activeItem{
-          border-right: 3px solid #f7a476;
-        }
-      }
-  
+
       &::after{
         content: "";
         width: 100%;
         height: 1px;
         display: block;
         opacity: 0.1;
-        margin: 40px auto;
+        margin: 10px auto;
         background: linear-gradient(to right, rgba(149, 149, 149, 0) 0%, rgba(33, 33, 33, 0.75) 22%, #010101 50%, rgba(38, 38, 38, 0.75) 83%, rgba(255, 255, 255, 0) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00959595', endColorstr='#00ffffff',GradientType=1 );
       }
     }
     &__listData{
       display: grid;
-      grid-template-columns: 20% 75%;
+      grid-template-columns: 25% 75%;
       gap: 5%;
     }
     &__listDate{
       display: grid;
       border-right: 4px solid #ccc;
       font-family: YanoneLight;
-      font-size: 16px;
+      font-size: 13px;
       align-content: space-around;
-    }
-    &__listDescription{
-      display: grid;
-      gap: 5px;
+      padding-right: 20px;
     }
     &__listType{
       font-family: YanoneLight;
-      font-size: 19px;
+      font-size: 15px;
     }
     &__listHeader{
       margin: 0;
       font-family: YanoneLight;
-      font-size: 28px;
+      font-size: 21px;
     }
     &__body{
       display: grid;
-      color: #666;
+      grid-area: 1 / 1;
+      justify-self: center;
+      width: 70%;
+      height: 100%;
     }
     &__bodyItem{
       display: grid;
       height: 100%;
-      grid-template-rows: 55% 40%;
+      grid-template-rows: max-content auto;
       gap: 5%;
       overflow-y: scroll;
       overflow: auto;
@@ -1935,164 +1921,100 @@
     &__projectHead{
       position: relative;
       font-family: PhilosopherRegular;
-      font-size: 35px;
+      font-size: 30px;
       animation: slide 0.5s ease;
-      margin: 0 0 5px 0;
+      margin: 0 0 5px 20%;
     }
     &__projectView{
-      position: absolute;
-      animation: slideImg 0.4s ease;
-    }
-    &__projectImg{
-      position: relative;
-      margin-left: 5%;
-      width: 90%;    
-      box-shadow: 0 0 20px #000;
-    }
-    &__projectType{
-      position: absolute;
-      top: 20px;
-      left: 0;
-      width: max-content;
-      background-color: #88e14c;
-      color: #fff;
-      font-size: 19px;
-      padding: 2px 7px;
-      border-radius: 4px;
-      border: 1px solid #666;
-      font-family: YanoneLight;
+      display: none;
     }
     &__projectDescription{
       font-family: YanoneLight;
-      font-size: 20px;
+      font-size: 21px;
       display: grid;
-      gap: 1%;
+      gap: 5%;
       overflow-y: scroll;
       overflow: auto;
       scrollbar-width: none;
-  
-      &::-webkit-scrollbar{
-        width: 0px;
-        background: transparent;
-      }
-  
-      &_bold{
-        font-family: YanoneLight;
-        margin-right: 10px;
-        font-weight: 800;
-      }
-      &_animaiton{
-        position: relative;
-        animation: slide 0.3s ease;
-      }
     }
     &__projectDescriptionLinks{
       display: flex;
-      gap: 20px;
+      justify-content: center;
+      gap: 15%;
     }
   }
   .link{
     position: relative;
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     background: #666;
     transition: background .5s ease;
     animation: slide 0.3s ease;
-  
-    &:hover, &:focus-within{
-      background: #f7a476;
-    }
-  }
-  .activeItem{
-    border-right: 3px solid #f7a476;
   }
 }
+//done
 @media only screen and (min-width: 375px) and (max-width: 479px) {
   .portfolio{
     display: grid;
     position: absolute;
-    grid-template-columns: 30% 68%;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
     gap: 2%;
-    top: 1%;
-    width: 74%;
-    height: 93%;
+    top: 0;
+    width: 97%;
+    height: 98%;
     padding: 1%;
     background: rgba($color: #fff, $alpha: 0.8);
     border: 1px dashed #666;
+    overflow: scroll;
   
-    &__list{
-      align-self: center;
-      width: 100%;
-      height: 80%;
-      overflow-y: scroll;
-      overflow: auto;
-      scrollbar-width: none;
-  
-      &::-webkit-scrollbar{
-        width: 0px;
-        background: transparent;
-      }
-    }
     &__listItem{
-      width: 100%;
-      height: max-content; 
+      width: 90%;
+      height: max-content;
       color: #666;
-      
-      &:hover{
-        cursor: pointer;
-        
-        .portfolio__listDate{
-          border-right: 3px solid #aaa;
-        }
-        .activeItem{
-          border-right: 3px solid #f7a476;
-        }
-      }
-  
+
       &::after{
         content: "";
         width: 100%;
         height: 1px;
         display: block;
         opacity: 0.1;
-        margin: 40px auto;
+        margin: 10px auto;
         background: linear-gradient(to right, rgba(149, 149, 149, 0) 0%, rgba(33, 33, 33, 0.75) 22%, #010101 50%, rgba(38, 38, 38, 0.75) 83%, rgba(255, 255, 255, 0) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00959595', endColorstr='#00ffffff',GradientType=1 );
       }
     }
     &__listData{
       display: grid;
-      grid-template-columns: 20% 75%;
+      grid-template-columns: 25% 75%;
       gap: 5%;
     }
     &__listDate{
       display: grid;
       border-right: 4px solid #ccc;
       font-family: YanoneLight;
-      font-size: 16px;
+      font-size: 13px;
       align-content: space-around;
-    }
-    &__listDescription{
-      display: grid;
-      gap: 5px;
+      padding-right: 20px;
     }
     &__listType{
       font-family: YanoneLight;
-      font-size: 19px;
+      font-size: 15px;
     }
     &__listHeader{
       margin: 0;
       font-family: YanoneLight;
-      font-size: 28px;
+      font-size: 21px;
     }
     &__body{
       display: grid;
-      color: #666;
+      grid-area: 1 / 1;
+      height: 100%;
     }
     &__bodyItem{
       display: grid;
       height: 100%;
-      grid-template-rows: 55% 40%;
+      grid-template-rows: max-content auto;
       gap: 5%;
       overflow-y: scroll;
       overflow: auto;
@@ -2101,164 +2023,100 @@
     &__projectHead{
       position: relative;
       font-family: PhilosopherRegular;
-      font-size: 35px;
+      font-size: 30px;
       animation: slide 0.5s ease;
-      margin: 0 0 5px 0;
+      margin: 0 0 5px 20%;
     }
     &__projectView{
-      position: absolute;
-      animation: slideImg 0.4s ease;
-    }
-    &__projectImg{
-      position: relative;
-      margin-left: 5%;
-      width: 90%;    
-      box-shadow: 0 0 20px #000;
-    }
-    &__projectType{
-      position: absolute;
-      top: 20px;
-      left: 0;
-      width: max-content;
-      background-color: #88e14c;
-      color: #fff;
-      font-size: 19px;
-      padding: 2px 7px;
-      border-radius: 4px;
-      border: 1px solid #666;
-      font-family: YanoneLight;
+      display: none;
     }
     &__projectDescription{
       font-family: YanoneLight;
-      font-size: 20px;
+      font-size: 21px;
       display: grid;
-      gap: 1%;
+      gap: 5%;
       overflow-y: scroll;
       overflow: auto;
       scrollbar-width: none;
-  
-      &::-webkit-scrollbar{
-        width: 0px;
-        background: transparent;
-      }
-  
-      &_bold{
-        font-family: YanoneLight;
-        margin-right: 10px;
-        font-weight: 800;
-      }
-      &_animaiton{
-        position: relative;
-        animation: slide 0.3s ease;
-      }
     }
     &__projectDescriptionLinks{
       display: flex;
-      gap: 20px;
+      justify-content: center;
+      gap: 15%;
     }
   }
   .link{
     position: relative;
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     background: #666;
     transition: background .5s ease;
     animation: slide 0.3s ease;
-  
-    &:hover, &:focus-within{
-      background: #f7a476;
-    }
-  }
-  .activeItem{
-    border-right: 3px solid #f7a476;
   }
 }
+//done
 @media only screen and (min-width: 360px) and (max-width: 374px) {
   .portfolio{
     display: grid;
     position: absolute;
-    grid-template-columns: 30% 68%;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
     gap: 2%;
-    top: 1%;
-    width: 74%;
-    height: 93%;
+    top: 0;
+    width: 97%;
+    height: 98%;
     padding: 1%;
     background: rgba($color: #fff, $alpha: 0.8);
     border: 1px dashed #666;
+    overflow: scroll;
   
-    &__list{
-      align-self: center;
-      width: 100%;
-      height: 80%;
-      overflow-y: scroll;
-      overflow: auto;
-      scrollbar-width: none;
-  
-      &::-webkit-scrollbar{
-        width: 0px;
-        background: transparent;
-      }
-    }
     &__listItem{
-      width: 100%;
-      height: max-content; 
+      width: 90%;
+      height: max-content;
       color: #666;
-      
-      &:hover{
-        cursor: pointer;
-        
-        .portfolio__listDate{
-          border-right: 3px solid #aaa;
-        }
-        .activeItem{
-          border-right: 3px solid #f7a476;
-        }
-      }
-  
+
       &::after{
         content: "";
         width: 100%;
         height: 1px;
         display: block;
         opacity: 0.1;
-        margin: 40px auto;
+        margin: 10px auto;
         background: linear-gradient(to right, rgba(149, 149, 149, 0) 0%, rgba(33, 33, 33, 0.75) 22%, #010101 50%, rgba(38, 38, 38, 0.75) 83%, rgba(255, 255, 255, 0) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00959595', endColorstr='#00ffffff',GradientType=1 );
       }
     }
     &__listData{
       display: grid;
-      grid-template-columns: 20% 75%;
+      grid-template-columns: 25% 75%;
       gap: 5%;
     }
     &__listDate{
       display: grid;
       border-right: 4px solid #ccc;
       font-family: YanoneLight;
-      font-size: 16px;
+      font-size: 13px;
       align-content: space-around;
-    }
-    &__listDescription{
-      display: grid;
-      gap: 5px;
+      padding-right: 20px;
     }
     &__listType{
       font-family: YanoneLight;
-      font-size: 19px;
+      font-size: 15px;
     }
     &__listHeader{
       margin: 0;
       font-family: YanoneLight;
-      font-size: 28px;
+      font-size: 21px;
     }
     &__body{
       display: grid;
-      color: #666;
+      grid-area: 1 / 1;
+      height: 100%;
     }
     &__bodyItem{
       display: grid;
       height: 100%;
-      grid-template-rows: 55% 40%;
+      grid-template-rows: max-content auto;
       gap: 5%;
       overflow-y: scroll;
       overflow: auto;
@@ -2267,164 +2125,94 @@
     &__projectHead{
       position: relative;
       font-family: PhilosopherRegular;
-      font-size: 35px;
+      font-size: 30px;
       animation: slide 0.5s ease;
-      margin: 0 0 5px 0;
+      margin: 0 0 5px 20%;
     }
     &__projectView{
-      position: absolute;
-      animation: slideImg 0.4s ease;
-    }
-    &__projectImg{
-      position: relative;
-      margin-left: 5%;
-      width: 90%;    
-      box-shadow: 0 0 20px #000;
-    }
-    &__projectType{
-      position: absolute;
-      top: 20px;
-      left: 0;
-      width: max-content;
-      background-color: #88e14c;
-      color: #fff;
-      font-size: 19px;
-      padding: 2px 7px;
-      border-radius: 4px;
-      border: 1px solid #666;
-      font-family: YanoneLight;
+      display: none;
     }
     &__projectDescription{
       font-family: YanoneLight;
-      font-size: 20px;
+      font-size: 21px;
       display: grid;
-      gap: 1%;
+      gap: 5%;
       overflow-y: scroll;
       overflow: auto;
       scrollbar-width: none;
-  
-      &::-webkit-scrollbar{
-        width: 0px;
-        background: transparent;
-      }
-  
-      &_bold{
-        font-family: YanoneLight;
-        margin-right: 10px;
-        font-weight: 800;
-      }
-      &_animaiton{
-        position: relative;
-        animation: slide 0.3s ease;
-      }
     }
     &__projectDescriptionLinks{
       display: flex;
-      gap: 20px;
+      width: 50%;
+      justify-self: center;
+      justify-content: space-around;
+      justify-items: center;
     }
-  }
-  .link{
-    position: relative;
-    width: 25px;
-    height: 25px;
-    background: #666;
-    transition: background .5s ease;
-    animation: slide 0.3s ease;
-  
-    &:hover, &:focus-within{
-      background: #f7a476;
-    }
-  }
-  .activeItem{
-    border-right: 3px solid #f7a476;
   }
 }
+//done
 @media only screen and (min-width: 320px) and (max-width: 359px) {
   .portfolio{
     display: grid;
     position: absolute;
-    grid-template-columns: 30% 68%;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
     gap: 2%;
-    top: 1%;
-    width: 74%;
-    height: 93%;
+    top: 0;
+    width: 97%;
+    height: 98%;
     padding: 1%;
     background: rgba($color: #fff, $alpha: 0.8);
     border: 1px dashed #666;
+    overflow: scroll;
   
-    &__list{
-      align-self: center;
-      width: 100%;
-      height: 80%;
-      overflow-y: scroll;
-      overflow: auto;
-      scrollbar-width: none;
-  
-      &::-webkit-scrollbar{
-        width: 0px;
-        background: transparent;
-      }
-    }
     &__listItem{
-      width: 100%;
-      height: max-content; 
+      width: 90%;
+      height: max-content;
       color: #666;
-      
-      &:hover{
-        cursor: pointer;
-        
-        .portfolio__listDate{
-          border-right: 3px solid #aaa;
-        }
-        .activeItem{
-          border-right: 3px solid #f7a476;
-        }
-      }
-  
+
       &::after{
         content: "";
         width: 100%;
         height: 1px;
         display: block;
         opacity: 0.1;
-        margin: 40px auto;
+        margin: 10px auto;
         background: linear-gradient(to right, rgba(149, 149, 149, 0) 0%, rgba(33, 33, 33, 0.75) 22%, #010101 50%, rgba(38, 38, 38, 0.75) 83%, rgba(255, 255, 255, 0) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00959595', endColorstr='#00ffffff',GradientType=1 );
       }
     }
     &__listData{
       display: grid;
-      grid-template-columns: 20% 75%;
+      grid-template-columns: 25% 75%;
       gap: 5%;
     }
     &__listDate{
       display: grid;
       border-right: 4px solid #ccc;
       font-family: YanoneLight;
-      font-size: 16px;
+      font-size: 13px;
       align-content: space-around;
-    }
-    &__listDescription{
-      display: grid;
-      gap: 5px;
+      padding-right: 20px;
     }
     &__listType{
       font-family: YanoneLight;
-      font-size: 19px;
+      font-size: 15px;
     }
     &__listHeader{
       margin: 0;
       font-family: YanoneLight;
-      font-size: 28px;
+      font-size: 21px;
     }
     &__body{
       display: grid;
-      color: #666;
+      grid-area: 1 / 1;
+      height: 100%;
     }
     &__bodyItem{
       display: grid;
       height: 100%;
-      grid-template-rows: 55% 40%;
+      grid-template-rows: max-content auto;
       gap: 5%;
       overflow-y: scroll;
       overflow: auto;
@@ -2433,164 +2221,91 @@
     &__projectHead{
       position: relative;
       font-family: PhilosopherRegular;
-      font-size: 35px;
+      font-size: 30px;
       animation: slide 0.5s ease;
-      margin: 0 0 5px 0;
+      margin: 0 0 5px 20%;
     }
     &__projectView{
-      position: absolute;
-      animation: slideImg 0.4s ease;
-    }
-    &__projectImg{
-      position: relative;
-      margin-left: 5%;
-      width: 90%;    
-      box-shadow: 0 0 20px #000;
-    }
-    &__projectType{
-      position: absolute;
-      top: 20px;
-      left: 0;
-      width: max-content;
-      background-color: #88e14c;
-      color: #fff;
-      font-size: 19px;
-      padding: 2px 7px;
-      border-radius: 4px;
-      border: 1px solid #666;
-      font-family: YanoneLight;
+      display: none;
     }
     &__projectDescription{
       font-family: YanoneLight;
-      font-size: 20px;
+      font-size: 21px;
       display: grid;
-      gap: 1%;
+      gap: 5%;
       overflow-y: scroll;
       overflow: auto;
       scrollbar-width: none;
-  
-      &::-webkit-scrollbar{
-        width: 0px;
-        background: transparent;
-      }
-  
-      &_bold{
-        font-family: YanoneLight;
-        margin-right: 10px;
-        font-weight: 800;
-      }
-      &_animaiton{
-        position: relative;
-        animation: slide 0.3s ease;
-      }
     }
     &__projectDescriptionLinks{
       display: flex;
-      gap: 20px;
+      justify-content: center;
     }
-  }
-  .link{
-    position: relative;
-    width: 25px;
-    height: 25px;
-    background: #666;
-    transition: background .5s ease;
-    animation: slide 0.3s ease;
-  
-    &:hover, &:focus-within{
-      background: #f7a476;
-    }
-  }
-  .activeItem{
-    border-right: 3px solid #f7a476;
   }
 }
+//done
 @media screen and (min-width: 0px) and (max-width: 319px) {
   .portfolio{
     display: grid;
     position: absolute;
-    grid-template-columns: 30% 68%;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
     gap: 2%;
-    top: 1%;
-    width: 74%;
-    height: 93%;
+    top: 0;
+    width: 97%;
+    height: 98%;
     padding: 1%;
     background: rgba($color: #fff, $alpha: 0.8);
     border: 1px dashed #666;
+    overflow: scroll;
   
-    &__list{
-      align-self: center;
-      width: 100%;
-      height: 80%;
-      overflow-y: scroll;
-      overflow: auto;
-      scrollbar-width: none;
-  
-      &::-webkit-scrollbar{
-        width: 0px;
-        background: transparent;
-      }
-    }
     &__listItem{
-      width: 100%;
-      height: max-content; 
+      width: 90%;
+      height: max-content;
       color: #666;
-      
-      &:hover{
-        cursor: pointer;
-        
-        .portfolio__listDate{
-          border-right: 3px solid #aaa;
-        }
-        .activeItem{
-          border-right: 3px solid #f7a476;
-        }
-      }
-  
+
       &::after{
         content: "";
         width: 100%;
         height: 1px;
         display: block;
         opacity: 0.1;
-        margin: 40px auto;
+        margin: 10px auto;
         background: linear-gradient(to right, rgba(149, 149, 149, 0) 0%, rgba(33, 33, 33, 0.75) 22%, #010101 50%, rgba(38, 38, 38, 0.75) 83%, rgba(255, 255, 255, 0) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00959595', endColorstr='#00ffffff',GradientType=1 );
       }
     }
     &__listData{
       display: grid;
-      grid-template-columns: 20% 75%;
+      grid-template-columns: 25% 75%;
       gap: 5%;
     }
     &__listDate{
       display: grid;
       border-right: 4px solid #ccc;
       font-family: YanoneLight;
-      font-size: 16px;
+      font-size: 13px;
       align-content: space-around;
-    }
-    &__listDescription{
-      display: grid;
-      gap: 5px;
+      padding-right: 20px;
     }
     &__listType{
       font-family: YanoneLight;
-      font-size: 19px;
+      font-size: 15px;
     }
     &__listHeader{
       margin: 0;
       font-family: YanoneLight;
-      font-size: 28px;
+      font-size: 21px;
     }
     &__body{
       display: grid;
-      color: #666;
+      grid-area: 1 / 1;
+      height: 100%;
     }
     &__bodyItem{
       display: grid;
       height: 100%;
-      grid-template-rows: 55% 40%;
+      grid-template-rows: max-content auto;
       gap: 5%;
       overflow-y: scroll;
       overflow: auto;
@@ -2599,75 +2314,25 @@
     &__projectHead{
       position: relative;
       font-family: PhilosopherRegular;
-      font-size: 35px;
+      font-size: 30px;
       animation: slide 0.5s ease;
-      margin: 0 0 5px 0;
+      margin: 0 0 5px 20%;
     }
     &__projectView{
-      position: absolute;
-      animation: slideImg 0.4s ease;
-    }
-    &__projectImg{
-      position: relative;
-      margin-left: 5%;
-      width: 90%;    
-      box-shadow: 0 0 20px #000;
-    }
-    &__projectType{
-      position: absolute;
-      top: 20px;
-      left: 0;
-      width: max-content;
-      background-color: #88e14c;
-      color: #fff;
-      font-size: 19px;
-      padding: 2px 7px;
-      border-radius: 4px;
-      border: 1px solid #666;
-      font-family: YanoneLight;
+      display: none;
     }
     &__projectDescription{
       font-family: YanoneLight;
-      font-size: 20px;
+      font-size: 21px;
       display: grid;
-      gap: 1%;
+      gap: 5%;
       overflow-y: scroll;
       overflow: auto;
       scrollbar-width: none;
-  
-      &::-webkit-scrollbar{
-        width: 0px;
-        background: transparent;
-      }
-  
-      &_bold{
-        font-family: YanoneLight;
-        margin-right: 10px;
-        font-weight: 800;
-      }
-      &_animaiton{
-        position: relative;
-        animation: slide 0.3s ease;
-      }
     }
     &__projectDescriptionLinks{
       display: flex;
-      gap: 20px;
+      justify-content: center;
     }
-  }
-  .link{
-    position: relative;
-    width: 25px;
-    height: 25px;
-    background: #666;
-    transition: background .5s ease;
-    animation: slide 0.3s ease;
-  
-    &:hover, &:focus-within{
-      background: #f7a476;
-    }
-  }
-  .activeItem{
-    border-right: 3px solid #f7a476;
   }
 }
