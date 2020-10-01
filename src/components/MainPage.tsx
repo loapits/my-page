@@ -19,7 +19,7 @@ export const MainPage = React.memo(() => {
   return (
     <main className={ styles.header }>
       {!main.logo && !main.title && <Preloader />}
-      <img src={main.logo} className={styles.logo} alt={main.alt}/>
+      <img src={`https://georgiy-kartashov.herokuapp.com${main.logo}`} className={styles.logo} alt={main.alt}/>
       <h1 className={styles.name}>{main.title}</h1>
     </main>
   )

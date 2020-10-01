@@ -25,7 +25,7 @@ export const Navigation = React.memo(() => {
   return (
     <div className={styles.navigation}>
       <div className={styles.header}>
-        <img src={main.logo} className={styles.logo} alt={main.alt}/>
+        <img src={`https://georgiy-kartashov.herokuapp.com${main.logo}`} className={styles.logo} alt={main.alt}/>
         <h1 className={styles.name}>{main.title}</h1>
       </div>
       <nav className={styles.navigation__items}>
