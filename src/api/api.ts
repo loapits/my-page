@@ -1,8 +1,8 @@
 import axios from 'axios'
 
 const instance = axios.create({
-  baseURL: 'https://georgiy-kartashov-server.herokuapp.com/api'
-  // baseURL: 'http://localhost:5000/api'
+  // baseURL: 'https://georgiy-kartashov-server.herokuapp.com/api'
+  baseURL: 'http://localhost:5000/api'
 })
 
 export const burgerApi = {
@@ -20,8 +20,8 @@ export const mainApi = {
 }
 
 export const navigationApi = {
-  getNavigationItems() {
-    return instance.get(`/navigation/getNavigationItems`)
+  getNavigation() {
+    return instance.get(`/navigation/getNavigation`)
     .then(res => res.data)
   }
 }

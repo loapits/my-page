@@ -1,8 +1,9 @@
 import { navigationApi } from "../api/api"
-import { NavigationItems, NavigationItem, NavigationReducer } from "../types/navigation"
-import { SET_NAVIGATION_ITEMS } from './action_types'
+import { NavigationItems, NavigationReducer, Navigation } from "../types/navigation"
+import { SET_NAVIGATION } from './action_types'
 
 const initialState = {
+  logo: '',
   items: [] as NavigationItems
 } 
 
@@ -10,9 +11,10 @@ export type NavigationInitial = typeof initialState
 
 export const navigationReducer = (state = initialState, action: NavigationReducer ): NavigationInitial => {
   switch (action.type) {
-    case SET_NAVIGATION_ITEMS: {
+    case SET_NAVIGATION: {
       return {
         ...state,
+        logo: action.payload.logo,
         items: action.payload.items
       }
     }
@@ -24,14 +26,15 @@ export const navigationReducer = (state = initialState, action: NavigationReduce
   }
 }
 
-const setNavigation = (navigation: NavigationItem) => ({
-  type: SET_NAVIGATION_ITEMS,
+const setNavigation = (navigation: Navigation) => ({
+  type: SET_NAVIGATION,
   payload: {
-    items: navigation
+    logo: navigation['logo'],
+    items: navigation['items']
   }
 })
 
 export const getNavigation = () => async (dispatch: Function) => {
-  const response = await navigationApi.getNavigationItems()
+  const response = await navigationApi.getNavigation()  
   dispatch(setNavigation(response))
 }

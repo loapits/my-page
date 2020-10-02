@@ -1,4 +1,4 @@
-import { SET_NAVIGATION_ITEMS } from "../state/action_types"
+import { SET_NAVIGATION } from "../state/action_types"
 
 export type NavigationItem = {
   id: number
@@ -6,13 +6,19 @@ export type NavigationItem = {
   title: string
 }
 
-type SetNavigationItems = {
-  type: typeof SET_NAVIGATION_ITEMS
+type SetNavigation = {
+  type: typeof SET_NAVIGATION
   payload: {
+    logo: string
     items: Array<NavigationItem>
   }
 }
 
+export type Navigation = {
+  logo: string,
+  items: Array<NavigationItem>
+}
+
 export type NavigationItems = Array<NavigationItem>
 
-export type NavigationReducer = SetNavigationItems
+export type NavigationReducer = SetNavigationItems | SetNavigationLogo

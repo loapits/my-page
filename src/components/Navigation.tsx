@@ -8,7 +8,7 @@ import { NavigationItem } from '../types/navigation'
 import { State } from '../types/state'
 
 export const Navigation = React.memo(() => {
-  const navigation = useSelector((state: State) => state.navigation.items)
+  const navigation = useSelector((state: State) => state.navigation)
   const main = useSelector((state: State) => state.main)
   const isChanged = useSelector((state: State) => state.burger.isChanged)
   const dispatch = useDispatch()
@@ -25,12 +25,12 @@ export const Navigation = React.memo(() => {
   return (
     <div className={styles.navigation}>
       <div className={styles.header}>
-        <img src={`https://georgiy-kartashov.herokuapp.com${main.logo}`} className={styles.logo} alt={main.alt}/>
+        <img src={navigation.logo} className={styles.logo} alt={main.alt}/>
         <h1 className={styles.name}>{main.title}</h1>
       </div>
       <nav className={styles.navigation__items}>
         <ul className={styles.navigation__ul}>
-          {navigation.map((li: NavigationItem) =>
+          {navigation.items.map((li: NavigationItem) =>
             <li 
               onClick={switchDispatch} 
               key={li.id}
