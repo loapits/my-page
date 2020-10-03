@@ -455,7 +455,7 @@
   }
 }
 /* Adaptive mobile */
-@media only screen and (min-width: 992px) and (max-width: 1023px) {
+@media only screen and (min-width: 992px) and (max-width: 1023px){
   .navigation{
     position: absolute;
     top: 0;
@@ -519,7 +519,8 @@
     }
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+//done
+@media only screen and (min-width: 768px) and (max-width: 991px){
   .navigation{
     position: absolute;
     top: 0;
@@ -544,7 +545,7 @@
     }
     .name{
       font-family: PhilosopherRegular;
-      font-size: 60px;
+      font-size: 40px;
       font-weight: 400;
       color: #666;
       margin: 0;
@@ -559,6 +560,72 @@
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       justify-items: center;
       align-items: center;
+      margin: 0;
+      padding: 0;
+  
+      .navigation__li{
+        list-style-type: none;
+  
+        .navigation__link{
+          color: #666;
+          font-size: 30px;
+          text-decoration: none;
+          transition: color .5s ease;
+  
+          &:focus{
+            outline: none;
+          }
+          &:hover, &:focus-within{
+            color: #88e14c;
+            border-bottom: 3px solid #88e14c;
+          }
+        }
+      }
+    }
+  }
+}
+//done
+@media only screen and (min-width: 720px) and (max-width: 767px){
+  .navigation{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 100;
+    animation-name: showingNavigation;
+    animation-duration: 0.3s;
+  }
+  .logo{
+    width: 100px;
+  }
+  .header{
+    display: grid;
+    justify-items: center;
+    margin-top: 17%;
+  
+    .logo{
+      justify-items: center;
+      width: 150px;
+    }
+    .name{
+      font-family: PhilosopherRegular;
+      font-size: 40px;
+      font-weight: 400;
+      color: #666;
+      margin: 0;
+    }
+  }
+  .navigation__items{
+    font-family: YanoneLight;
+    margin-top: 100px;
+  
+    .navigation__ul{
+      display: grid;
+      grid-template-columns: 90%;
+      justify-items: center;
+      align-items: center;
+      gap: 40px;
       margin: 0;
       padding: 0;
   
@@ -583,7 +650,8 @@
     }
   }
 }
-@media only screen and (min-width: 720px) and (max-width: 767px) {
+//done
+@media only screen and (min-width: 580px) and (max-width: 719px){
   .navigation{
     position: absolute;
     top: 0;
@@ -608,7 +676,7 @@
     }
     .name{
       font-family: PhilosopherRegular;
-      font-size: 60px;
+      font-size: 40px;
       font-weight: 400;
       color: #666;
       margin: 0;
@@ -620,71 +688,8 @@
   
     .navigation__ul{
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      justify-items: center;
-      align-items: center;
-      margin: 0;
-      padding: 0;
-  
-      .navigation__li{
-        list-style-type: none;
-  
-        .navigation__link{
-          color: #666;
-          font-size: 36px;
-          text-decoration: none;
-          transition: color .5s ease;
-  
-          &:focus{
-            outline: none;
-          }
-          &:hover, &:focus-within{
-            color: #88e14c;
-            border-bottom: 3px solid #88e14c;
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (min-width: 580px) and (max-width: 719px) {
-  .navigation{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    z-index: 100;
-    animation-name: showingNavigation;
-    animation-duration: 0.3s;
-  }
-  .logo{
-    width: 100px;
-  }
-  .header{
-    display: grid;
-    justify-items: center;
-    margin-top: 17%;
-  
-    .logo{
-      justify-items: center;
-      width: 150px;
-    }
-    .name{
-      font-family: PhilosopherRegular;
-      font-size: 60px;
-      font-weight: 400;
-      color: #666;
-      margin: 0;
-    }
-  }
-  .navigation__items{
-    font-family: YanoneLight;
-    margin-top: 100px;
-  
-    .navigation__ul{
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-template-columns: 100%;
+      gap: 40px;
       justify-items: center;
       align-items: center;
       margin: 0;
@@ -720,7 +725,7 @@
   }
 }
 //done
-@media only screen and (min-width: 480px) and (max-width: 579px) {
+@media only screen and (min-width: 480px) and (max-width: 579px){
   .navigation{
     display: grid;
     position: absolute;
@@ -747,7 +752,7 @@
     }
     .name{
       font-family: PhilosopherRegular;
-      font-size: 60px;
+      font-size: 40px;
       font-weight: 400;
       color: #666;
       margin: 0;
@@ -760,7 +765,6 @@
     .navigation__ul{
       display: grid;
       grid-template-columns: 100%;
-      // grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
       gap: 19%;
       justify-items: center;
       align-items: center;
@@ -789,7 +793,7 @@
   }
 }
 //done
-@media only screen and (min-width: 375px) and (max-width: 479px) {
+@media only screen and (min-width: 375px) and (max-width: 479px){
   .navigation{
     display: grid;
     position: absolute;
@@ -816,7 +820,7 @@
     .name{
       width: 90%;
       font-family: PhilosopherRegular;
-      font-size: 45px;
+      font-size: 38px;
       font-weight: 400;
       text-align: center;
       color: #666;
@@ -830,7 +834,6 @@
     .navigation__ul{
       display: grid;
       grid-template-columns: 100%;
-      // grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
       gap: 19%;
       justify-items: center;
       align-items: center;
@@ -859,7 +862,7 @@
   }
 }
 //done
-@media only screen and (min-width: 320px) and (max-width: 374px) {
+@media only screen and (min-width: 320px) and (max-width: 374px){
   .navigation{
     display: grid;
     position: absolute;
@@ -886,7 +889,7 @@
     .name{
       width: 90%;
       font-family: PhilosopherRegular;
-      font-size: 45px;
+      font-size: 34px;
       font-weight: 400;
       text-align: center;
       color: #666;
@@ -900,7 +903,6 @@
     .navigation__ul{
       display: grid;
       grid-template-columns: 100%;
-      // grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
       gap: 19%;
       justify-items: center;
       align-items: center;
@@ -929,7 +931,7 @@
   }
 }
 //done
-@media screen and (min-width: 0px) and (max-width: 319px) {
+@media screen and (min-width: 0px) and (max-width: 319px){
   .navigation{
     display: grid;
     position: absolute;
@@ -956,7 +958,7 @@
     .name{
       width: 90%;
       font-family: PhilosopherRegular;
-      font-size: 40px;
+      font-size: 30px;
       font-weight: 400;
       text-align: center;
       color: #666;
@@ -970,7 +972,6 @@
     .navigation__ul{
       display: grid;
       grid-template-columns: 100%;
-      // grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
       gap: 19%;
       justify-items: center;
       align-items: center;

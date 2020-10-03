@@ -57,25 +57,25 @@ export const Portfolio = React.memo(() => {
                 <h1 className={styles.portfolio__projectHead}>{el.title}</h1>
                 <div className={styles.portfolio__projectView}>
                   <img 
-                    src={el.img} 
+                    src={el.img.src} 
                     className={styles.portfolio__projectImg} 
-                    alt={el.alt}
+                    alt={el.img.alt}
                   />
                   <span className={styles.portfolio__projectType}>{el.type}</span>
                 </div>
               </section>
               <section className={styles.portfolio__projectDescription}>
                 <ProjectItem 
-                  itemHeader={el.description.bodyTitle}
-                  itemData={el.description.body}
+                  itemHeader={el.description.body.title}
+                  itemData={el.description.body.body}
                 />
                 <ProjectItem
-                  itemHeader={el.description.tasksTitle}
-                  itemData={el.description.tasks}
+                  itemHeader={el.description.task.title}
+                  itemData={el.description.task.body}
                 />
                 <ProjectItem
-                  itemHeader={el.description.toolsTitle}
-                  itemData={el.description.tools}
+                  itemHeader={el.description.tools.title}
+                  itemData={el.description.tools.title}
                 />
                 <article className={styles.portfolio__projectDescription_animaiton}>
                   <span className={styles.portfolio__projectDescription_bold}>Продолжительность:</span> 
@@ -83,18 +83,18 @@ export const Portfolio = React.memo(() => {
                   <span> до {el.description.duration.to}</span>
                 </article>
                 <article className={styles.portfolio__projectDescriptionLinks}>
-                  {el.description.linkToRepository && 
+                  {el.description.links.repository && 
                     /* eslint-disable-next-line */
                     <a 
-                      href={el.description.linkToSite} 
+                      href={el.description.links.site} 
                       aria-label="Ссылка на гитхаб" 
                       className={[styles.link, 'site'].join(' ')}
                     ></a>
                   }
-                  {el.description.linkToRepository && 
+                  {el.description.links.repository && 
                     /* eslint-disable-next-line */
                     <a 
-                      href={el.description.linkToRepository} 
+                      href={el.description.links.repository} 
                       aria-label="Ссылка на linkedin" 
                       className={[styles.link, 'github'].join(' ')}
                     ></a>

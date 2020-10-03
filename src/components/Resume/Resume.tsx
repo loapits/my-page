@@ -11,6 +11,8 @@ export const Resume = React.memo(() => {
   const resume = useSelector((state: State) => state.resume.resume)
   const dispatch = useDispatch()
     
+  console.log(resume);
+  
   useEffect(() => {
     dispatch(getResume())
     dispatch(getMain())
@@ -27,11 +29,13 @@ export const Resume = React.memo(() => {
         <section className={styles.resume__description}>
           <h1 className={headLarge}>{resume.title}</h1>
           <article className={styles.resume__main}>
-            <img 
-              className={styles.resume__avatar} 
-              src={resume.avatar} 
-              alt={resume.alt} 
-            />
+            {resume.avatar && 
+              <img 
+                className={styles.resume__avatar} 
+                src={resume.avatar.src} 
+                alt={resume.avatar.alt} 
+              />
+            }
             {!resume.contacts && <Preloader />}
             <p>{resume.aboutMe}</p>
           </article>
@@ -71,13 +75,13 @@ export const Resume = React.memo(() => {
             </article>
             
             {/* Skills */}
-            <ResumeItem item={resume.skills} />    
+            <ResumeItem item={resume.skills} />
             
             {/* Education */}
-            <ResumeItem item={resume.education} />     
+            <ResumeItem item={resume.education} />
 
             {/* Tools */}
-            <ResumeItem item={resume.tools} />         
+            <ResumeItem item={resume.tools} />
           </section>
         }
       </div>

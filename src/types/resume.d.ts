@@ -26,6 +26,10 @@ interface IResumeKnowledgesItem {
   }]
 }
 
+type Avatar = {
+  src: string,
+  alt: string
+}
 type SetResume = {
   type: typeof SET_RESUME_STATE,
   payload: {
@@ -39,17 +43,15 @@ type Skills = IResumeKnowledgesItem
 type Tools = IResumeKnowledgesItem
 type Education = IResumeKnowledgesItem
 
-
 export type ResumeObject = {
   title: string
   pageTitle: string
-  avatar: string
+  avatar: Avatar
   aboutMe: string
   contacts: IContacts
   skills: Skills
   tools: Tools
   education: Education
-  alt: string
 }
 
 export type ResumeItemProps = {

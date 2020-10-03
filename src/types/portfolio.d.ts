@@ -27,21 +27,31 @@ export type ProjectsItem = {
   id: number
   title: string
   description: {
-    linkToSite: string
-    linkToRepository: string
+    links: {
+      site: string,
+      repository: string
+    }
     duration: {
       from: string
       to: string
     }
-    tasksTitle: string
-    tasks: string
-    bodyTitle: string
-    body: string
-    toolsTitle: string
-    tools: string
-  },
-  img: string
+    task: {
+      title: string
+      body: string
+    }
+    body: {
+      title: string
+      body: string
+    }
+    tools: {
+      title: string
+      body: string
+    }
+  }
+  img: {
+    src: string
+    alt: string
+  }
   type: string
   isDisplay: boolean
-  alt: string
 }
