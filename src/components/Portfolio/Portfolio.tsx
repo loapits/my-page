@@ -19,7 +19,6 @@ export const Portfolio = React.memo(() => {
   }, [])  
  
   document.title = 'Портфолио'
-  
   const selectPortfolioItem = (id: number) => {
     dispatch(switchDisplayng(id))
   }

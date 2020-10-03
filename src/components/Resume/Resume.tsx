@@ -10,8 +10,6 @@ import { Preloader } from '../Preloader'
 export const Resume = React.memo(() => {
   const resume = useSelector((state: State) => state.resume.resume)
   const dispatch = useDispatch()
-    
-  console.log(resume);
   
   useEffect(() => {
     dispatch(getResume())
