@@ -19,7 +19,7 @@
   }
 }
 
-@media only screen and (min-width: 1750px) and (max-width: 1919px){
+@media only screen and (min-width: 1750px){
   .header{
     display: grid;
     position: absolute;
@@ -34,7 +34,7 @@
     .name{
       align-self: flex-start;
       font-family: PhilosopherRegular;
-      font-size: 60px;
+      font-size: 55px;
       font-weight: 400;
       color: #fff;
       margin: 0;
@@ -56,7 +56,7 @@
     .name{
       align-self: flex-start;
       font-family: PhilosopherRegular;
-      font-size: 60px;
+      font-size: 55px;
       font-weight: 400;
       color: #fff;
       margin: 0;
@@ -78,7 +78,7 @@
     .name{
       align-self: flex-start;
       font-family: PhilosopherRegular;
-      font-size: 60px;
+      font-size: 55px;
       font-weight: 400;
       color: #fff;
       margin: 0;
@@ -100,7 +100,7 @@
     .name{
       align-self: flex-start;
       font-family: PhilosopherRegular;
-      font-size: 60px;
+      font-size: 55px;
       font-weight: 400;
       color: #fff;
       margin: 0;
@@ -122,7 +122,7 @@
     .name{
       align-self: flex-start;
       font-family: PhilosopherRegular;
-      font-size: 60px;
+      font-size: 50px;
       font-weight: 400;
       color: #fff;
       margin: 0;
@@ -144,7 +144,7 @@
     .name{
       align-self: flex-start;
       font-family: PhilosopherRegular;
-      font-size: 60px;
+      font-size: 50px;
       font-weight: 400;
       color: #fff;
       margin: 0;
@@ -167,14 +167,13 @@
     .name{
       align-self: flex-start;
       font-family: PhilosopherRegular;
-      font-size: 60px;
+      font-size: 45px;
       font-weight: 400;
       color: #fff;
       margin: 0;
     }
   }
 }
-//done
 @media only screen and (min-width: 768px) and (max-width: 991px){
   .header{
     display: grid;
@@ -197,7 +196,6 @@
     }
   }
 }
-//done
 @media only screen and (min-width: 720px) and (max-width: 767px){
   .header{
     display: grid;
@@ -220,7 +218,6 @@
     }
   }
 }
-//done
 @media only screen and (min-width: 580px) and (max-width: 719px){
   .header{
     display: grid;
@@ -243,7 +240,6 @@
     }
   }
 }
-//done
 @media only screen and (min-width: 480px) and (max-width: 579px){
   .header{
     display: grid;
@@ -268,7 +264,6 @@
     }
   }
 }
-//done
 @media only screen and (min-width: 375px) and (max-width: 479px){
   .header{
     display: grid;
@@ -291,7 +286,6 @@
     }
   }
 }
-//done
 @media only screen and (min-width: 320px) and (max-width: 374px){
   .header{
     display: grid;
@@ -314,7 +308,6 @@
     }
   }
 }
-//done
 @media screen and (min-width: 0px) and (max-width: 319px){
   .header{
     display: grid;

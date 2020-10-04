@@ -30,7 +30,7 @@ export const Portfolio = React.memo(() => {
         <aside className={styles.portfolio__list}>
           {portfolio.projects.map((el: ProjectsItem) => 
             <section
-              key={el.id} 
+              key={el.id}
               onClick={() => selectPortfolioItem(el.id)} 
               className={styles.portfolio__listItem}
               aria-label={el.title}
@@ -74,7 +74,7 @@ export const Portfolio = React.memo(() => {
                 />
                 <ProjectItem
                   itemHeader={el.description.tools.title}
-                  itemData={el.description.tools.title}
+                  itemData={el.description.tools.body}
                 />
                 <article className={styles.portfolio__projectDescription_animaiton}>
                   <span className={styles.portfolio__projectDescription_bold}>Продолжительность:</span> 
