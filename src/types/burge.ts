@@ -1,4 +1,4 @@
-import { SWITCH_IS_CHANGE, SET_BURGER_STATE, SET_IS_CHANGED } from "../state/action_types"
+import { SWITCH_IS_CHANGE } from "../state/action_types"
 
 export type SwitchingChange = {
   type: typeof SWITCH_IS_CHANGE

@@ -1,5 +1,5 @@
 import { burgerApi } from "../api/api"
-import { Burger, BurgerReducer } from "../types/burger"
+import { Burger, BurgerReducer } from "../types/burge"
 import { SWITCH_IS_CHANGE } from "./action_types"
 
 export const initialState = {

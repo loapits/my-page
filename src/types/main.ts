@@ -1,4 +1,4 @@
-import { SET_MAIN_STATE } from './action_types'
+import { SET_MAIN_STATE } from '../state/action_types'
 
 type SetMain = {
   type: typeof SET_MAIN_STATE

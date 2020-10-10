@@ -8,7 +8,7 @@ export const Copyright = React.memo(() => {
   const isChanged = useSelector((state: State) => state.burger.isChanged)
   
   const switchColor = isChanged === false ? styles.copyright_white : styles.copyright_gray
-
+  
   return(
     <span className={[styles.copyright, switchColor].join(' ')}>
       {copyright}

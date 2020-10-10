@@ -21,4 +21,4 @@ export type Navigation = {
 
 export type NavigationItems = Array<NavigationItem>
 
-export type NavigationReducer = SetNavigationItems | SetNavigationLogo
+export type NavigationReducer = SetNavigation
